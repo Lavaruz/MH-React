@@ -1,0 +1,31 @@
+.armors-main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    text-align: center;
+}
+.armor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0 1rem;
+    transition: .5s;
+    min-height: 150px;
+}
+.armor-info{
+    text-align: left;
+}
+.armor-info h5{
+    margin: 0;
+}
+.armor-info p{
+    margin: 0 0 1rem;
+}
+.armor:hover{
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+}

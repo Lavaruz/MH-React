@@ -1,0 +1,17 @@
+.sidebar{
+    border: 1px solid lightgray;
+    border-width: 0px 1px 0px 0px;
+}
+
+.sidebar-1{
+    padding: .3rem 10rem .3rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.sidebar-1 i{
+    margin: 0;
+}
+.sidebar-1 p{
+    margin: .5rem 0;
+}
