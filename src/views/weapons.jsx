@@ -19,6 +19,8 @@ function Weapons(){
             if(entires[0].isIntersecting){
                 setLt(prev => prev+18)
             }
+        },{
+            rootMargin: '400px'
         })
         if (node) observer.current.observe(node)
     },[])

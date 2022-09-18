@@ -10,7 +10,7 @@ function Navbar(){
                     </a>
                 </div>
                 <div className="nav-social">
-                    <a href="/#">Github</a>
+                    <a href="https://github.com/Lavaruz/MH-React"><i class="github-icon fa-brands fa-github" style={{"fontSize":"1.5rem"}}></i></a>
                 </div>
             </div>
         </div>
