@@ -8,7 +8,15 @@ a{
     text-decoration: none;
 }
 
-nav{
+.navbar{
+    position: sticky;
+    top: 0%;
+    border: 1px solid lightgray;
+    border-width: 0 0 1px 0;
+    background-color: #f8fafc;
+    z-index: 100;
+}
+.navbar-sticky{
     display: flex;
     align-items: center;
     justify-content: space-between;

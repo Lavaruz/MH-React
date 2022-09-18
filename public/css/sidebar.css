@@ -1,17 +1,31 @@
-.sidebar{
+.sidebar-stick{
     border: 1px solid lightgray;
     border-width: 0px 1px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    min-height: 100vh;
+    position: sticky;
+    top: 18%;
+}
+.sidebar-stick h3{
+    margin: .5rem 0;
 }
 
 .sidebar-1{
     padding: .3rem 10rem .3rem 0;
-    display: flex;
-    gap: 1rem;
     align-items: center;
 }
-.sidebar-1 i{
+.linkTo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.linkTo i{
+    width: 2rem;
+    font-size: 1.2rem;
     margin: 0;
 }
-.sidebar-1 p{
+.linkTo p{
     margin: .5rem 0;
 }
