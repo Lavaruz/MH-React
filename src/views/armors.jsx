@@ -2,6 +2,8 @@ import axios from 'axios'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 import Armor from '../components/armor'
+import Loading from '../components/loading'
+import Sidebar from '../components/sidebar'
 
 function Armors(){
     const url = 'https://mhw-db.com/armor/'
@@ -17,7 +19,7 @@ function Armors(){
         if (observer.current) observer.current.disconnect()
         observer.current = new IntersectionObserver(entires => {
             if(entires[0].isIntersecting){
-                setLt(prev => prev+18)
+                setLt(prev => prev+24)
             }
         })
         if (node) observer.current.observe(node)
@@ -44,16 +46,20 @@ function Armors(){
     if(armors){
         content = armors.map((armor, index) => {
             if(armors.length === index + 1){
-                return <Armor ref={lastArmorCallback} name={armor.name} img={armor.assets.imageMale} rank={armor.rank} key={index}/>
+                return <Armor ref={lastArmorCallback} name={armor.name} img={armor.assets.imageMale} rank={armor.rank} id={armor.id} key={index}/>
             }else{
-                return <Armor name={armor.name} img={armor.assets.imageMale} rank={armor.rank} key={index}/>
+                return <Armor name={armor.name} img={armor.assets.imageMale} rank={armor.rank} id={armor.id} key={index}/>
             }
         })
     }
     return (
-            <div className='armors-main'>
-            {content}
-            </div>
+        
+        <div className='main-content'>
+            <Sidebar/>
+            <div className='armors-main'>{content}</div>
+            <div></div>
+            <Loading/>
+        </div>
         )
 }
 

@@ -1,35 +1,33 @@
-import {Link} from 'react-router-dom'
-
 function Sidebar(){
     return(
         <div className="sidebar">
             <div className="sidebar-stick">
                 <h3>List Of Items</h3>
                 <div className="sidebar-1">
-                    <Link className='linkTo' to='/'>
-                        <i class="fa-solid fa-shield-halved"></i>
+                    <a href="/" className='linkTo'>
+                        <i className="fa-solid fa-shield-halved"></i>
                         <p>Armor</p>
-                    </Link>
+                    </a>
                 </div>
                 <div className="sidebar-1">
-                    <Link className='linkTo' to='/weapon'>
-                        <i class="fa-solid fa-gun"></i>
+                    <a href="/weapon" className='linkTo'>
+                        <i className="fa-solid fa-gun"></i>
                         <p>Weapon</p>
-                    </Link>
+                    </a>
                 </div>
                 <h3>Monster List</h3>
                 <div className="sidebar-1">
-                    <Link className='linkTo' to='/monster'>
-                        <i class="fa-solid fa-ghost"></i>
+                    <a className='linkTo' href='/monster'>
+                        <i className="fa-solid fa-ghost"></i>
                         <p>Monster</p>
-                    </Link>
+                    </a>
                 </div>
                 <h3>Map Route</h3>
                 <div className="sidebar-1">
-                    <Link className='linkTo' to='/map'>
-                        <i class="fa-solid fa-map"></i>
+                    <a className='linkTo' href='/map'>
+                        <i className="fa-solid fa-map"></i>
                         <p>Map</p>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

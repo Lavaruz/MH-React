@@ -1,30 +1,26 @@
 import './App.css';
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, Navigate} from 'react-router-dom'
 
 import Navbar from './components/navbar'
 import Armors from './views/armors'
-import Sidebar from './views/sidebar'
 import Weapons from './views/weapons';
+import ArmorDetail from './views/armor-detail';
+
 
 function App() {
   return (
     <>
       <Navbar/>
-      <Routes>
-        <Route path='/' element={
-          <div className='main-content'>
-            <Sidebar/>
-            <Armors/>
-          </div>
-        }/>
-
-        <Route path='/weapon' element={
-          <div className='main-content'>
-            <Sidebar/>
-            <Weapons/>
-          </div>
-        }/>
-      </Routes>
+      <div className='main'>
+        <Routes>
+          <Route path='/' element={<Navigate to='/armor'/>}/>
+          <Route path='/armor'>
+            <Route index element={<Armors/>}/>
+            <Route path=':id' element={<ArmorDetail/>}/>
+          </Route>
+          <Route path='/weapon' element={<Weapons/>}/>
+        </Routes>
+      </div>
     </>
   );
 }

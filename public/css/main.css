@@ -11,3 +11,8 @@ hr{ display: block; height: 1px;
     grid-template-columns: max-content 1fr;
     gap: 2rem;
 }
+.loading{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}

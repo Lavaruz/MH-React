@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
+import Sidebar from '../components/sidebar'
 import Weapon from '../components/weapon'
 
 function Weapons(){
@@ -17,7 +18,7 @@ function Weapons(){
         if (observer.current) observer.current.disconnect()
         observer.current = new IntersectionObserver(entires => {
             if(entires[0].isIntersecting){
-                setLt(prev => prev+18)
+                setLt(prev => prev+24)
             }
         },{
             rootMargin: '400px'
@@ -46,13 +47,18 @@ function Weapons(){
     if(weapons){
         content = weapons.map((weapon, index) => {
             if(weapons.length === index + 1){
-                return <Weapon ref={lastWeaponCallback} name={weapon.name} img={weapon.assets.image} type={weapon.type} key={index}/>
+                return <Weapon ref={lastWeaponCallback} name={weapon.name} img={weapon.assets.image} type={weapon.type} icon={weapon.assets.icon} key={index}/>
             }else{
-                return <Weapon name={weapon.name} img={weapon.assets.image} type={weapon.type} key={index}/>
+                return <Weapon name={weapon.name} img={weapon.assets.image} type={weapon.type} icon={weapon.assets.icon} key={index}/>
             }
         })
     }
-    return <div className='armors-main'>{content}</div>
+    return(
+        <div className='main-content'>
+            <Sidebar/>
+            <div className='armors-main'>{content}</div>
+        </div>
+        )
 }
 
 export default Weapons

@@ -1,8 +1,9 @@
 import React from "react"
 
 const Armor = React.forwardRef((props, ref)=>{
+    const destinationLink = `/armor/${props.id}`
     return (
-        <a href="/#">
+        <a href={destinationLink}>
             <div ref={ref} className="armor">
                 <div className="armor-info">
                     <h3>{props.name}</h3>

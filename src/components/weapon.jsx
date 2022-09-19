@@ -6,8 +6,10 @@ const Weapon = React.forwardRef((props, ref)=>{
             <div ref={ref} className="armor">
                 <div className="armor-info">
                     <h3>{props.name}</h3>
-                    <b>type</b>
-                    <p className="armor-rank">{props.type}</p>
+                    <div className="weapon-type">
+                        <b>type</b>
+                        <img src={props.icon} alt="" width={'20px'} title={props.type}/>
+                    </div>
                 </div>
                 <img src={props.img} alt="" width={100}/>
             </div>
