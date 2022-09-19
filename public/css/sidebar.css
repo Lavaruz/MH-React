@@ -20,7 +20,6 @@
     display: flex;
     align-items: center;
     gap: .5rem;
-    color: #d0d0d0;
 }
 .linkTo i{
     width: 2rem;
