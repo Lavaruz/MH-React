@@ -6,7 +6,8 @@ function Navbar(){
             <div className="navbar-sticky">
                 <div className="nav-brand">
                     <a href="/#">
-                        <h2>Monster Hunter Wiki</h2>
+                        {/* <h2>Monster Hunter Wiki</h2> */}
+                        <img src="/img/brand.png" alt=""  width={180}/>
                     </a>
                 </div>
                 <div className="nav-social">
