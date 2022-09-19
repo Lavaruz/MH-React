@@ -5,6 +5,7 @@ import Navbar from './components/navbar'
 import Armors from './views/armors'
 import Weapons from './views/weapons';
 import ArmorDetail from './views/armor-detail';
+import Footer from './components/footer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           </Route>
           <Route path='/weapon' element={<Weapons/>}/>
         </Routes>
+        <Footer/>
       </div>
     </>
   );

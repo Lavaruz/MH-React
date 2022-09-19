@@ -19,7 +19,7 @@ function Armors(){
         if (observer.current) observer.current.disconnect()
         observer.current = new IntersectionObserver(entires => {
             if(entires[0].isIntersecting){
-                setLt(prev => prev+24)
+                setLt(prev => prev+9)
             }
         })
         if (node) observer.current.observe(node)
@@ -46,9 +46,9 @@ function Armors(){
     if(armors){
         content = armors.map((armor, index) => {
             if(armors.length === index + 1){
-                return <Armor ref={lastArmorCallback} name={armor.name} img={armor.assets.imageMale} rank={armor.rank} id={armor.id} key={index}/>
+                return <Armor ref={lastArmorCallback} name={armor.name} img={armor.assets ? armor.assets.imageMale : ''} rank={armor.rank} id={armor.id} key={index}/>
             }else{
-                return <Armor name={armor.name} img={armor.assets.imageMale} rank={armor.rank} id={armor.id} key={index}/>
+                return <Armor name={armor.name} img={armor.assets ? armor.assets.imageMale : ''} rank={armor.rank} id={armor.id} key={index}/>
             }
         })
     }

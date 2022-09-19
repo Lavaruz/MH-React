@@ -1,0 +1,18 @@
+footer{
+    padding: 2rem 0;
+}
+footer h4{
+    margin: 1rem 0 0;
+    font-weight: bold;
+}
+
+.footer-social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.footer-social i{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}

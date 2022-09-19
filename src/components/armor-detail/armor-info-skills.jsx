@@ -1,4 +1,4 @@
-function ArmorSets(props){
+function ArmorSkills(props){
     let content = null
 
     if(props.skills.length !== 0){
@@ -23,4 +23,4 @@ function ArmorSets(props){
     )
 }
 
-export default ArmorSets
+export default ArmorSkills

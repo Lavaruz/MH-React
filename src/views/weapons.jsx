@@ -18,7 +18,7 @@ function Weapons(){
         if (observer.current) observer.current.disconnect()
         observer.current = new IntersectionObserver(entires => {
             if(entires[0].isIntersecting){
-                setLt(prev => prev+24)
+                setLt(prev => prev+9)
             }
         },{
             rootMargin: '400px'

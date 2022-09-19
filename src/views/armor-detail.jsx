@@ -1,11 +1,12 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import ArmorCraft from "../components/armor-info-craft"
 
-import ArmorData from "../components/armor-info-data"
-import ArmorSets from "../components/armor-info-skills"
+import ArmorCraft from "../components/armor-detail/armor-info-craft"
+import ArmorData from "../components/armor-detail/armor-info-data"
+import ArmorSkills from "../components/armor-detail/armor-info-skills"
 import Sidebar from '../components/sidebar'
+import ArmorSets from '../components/armor-detail/armor-info-sets'
 
 function ArmorDetail(){
     const {id} = useParams()
@@ -31,10 +32,11 @@ function ArmorDetail(){
             rarity={armor.rarity}
             defense={armor.defense}
             resistances={armor.resistances}
-            assets={armor.assets ? armor.assets :[]}
+            assets={armor.assets ? armor.assets : []}
             />
+            <ArmorSets armorSets={armor.armorSet} />
             <div className="armor-skills-craft">
-                <ArmorSets skills={armor.skills}/>
+                <ArmorSkills skills={armor.skills}/>
                 <ArmorCraft materials={armor.crafting.materials} />
             </div>
         </div>
