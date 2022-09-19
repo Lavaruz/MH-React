@@ -1,6 +1,4 @@
-.armor-detail-page{
-    padding: 0 0 2rem;
-}
+
 .armor-detail-main{
     padding: 1rem 0;
     display: grid;
@@ -29,6 +27,7 @@
 }
 .armor-detail-img img{
     width: 100px;
+    margin: 0 1rem;
 }
 .armor-detail-type-rank{
     padding: 1rem;
@@ -51,14 +50,18 @@
 
 .armor-detail-stat{
     border-radius: 5px;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
 }
+.armor-detail-stat h3{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
 .defense-title{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     gap: 3rem;
     margin: 1rem 0;
 }
@@ -86,7 +89,7 @@
 }
 
 .resistances{
-    margin: 3rem 0 0;
+    margin: 2rem 0 0;
 }
 .resistances-element{
     display: flex;
@@ -99,9 +102,11 @@
 
 .armor-skills-craft{
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
 }
 .armor-skills{
+    height: max-content;
     display: grid;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -111,14 +116,23 @@
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
 }
 .armor-skills h3{
-    margin: 0;
+    margin: 0 0 .3rem;
 }
 .armor-skill{
     border-radius: 3px;
 }
 .armor-skill h4{
-    margin-bottom: .3rem;
+    margin: .7rem 0 0;
 }
 .armor-skill p{
     margin: 0;
+}
+
+.armor-craft{
+    display: flex;
+    gap: .5rem;
+    height: max-content;
+}
+.armor-craft p{
+    margin: .2rem 0;
 }
