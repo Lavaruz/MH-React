@@ -35,7 +35,7 @@ function ArmorData(props){
                         <div className="defense-title">
                             <p>Base: </p>
                             <div className="defense-bar">
-                                <div className="defense-value">
+                                <div className="defense-value" style={{"--w":`${props.defense.base/2}%`}}>
                                     <span>{props.defense.base}</span>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@ function ArmorData(props){
                         <div className="defense-title">
                             <p>Max: </p>
                             <div className="defense-bar">
-                                <div className="defense-value">
+                                <div className="defense-value" style={{"--w":`${props.defense.max/2}%`}}>
                                     <span>{props.defense.max}</span>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ function ArmorData(props){
                         <div className="defense-title">
                             <p>Augmented: </p>
                             <div className="defense-bar">
-                                <div className="defense-value">
+                                <div className="defense-value" style={{"--w":`${props.defense.augmented/2}%`}}>
                                     <span>{props.defense.augmented}</span>
                                 </div>
                             </div>
