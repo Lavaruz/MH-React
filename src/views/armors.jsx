@@ -50,7 +50,11 @@ function Armors(){
             }
         })
     }
-    return <div className='armors-main'>{content}</div>
+    return (
+            <div className='armors-main'>
+            {content}
+            </div>
+        )
 }
 
 export default Armors
