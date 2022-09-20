@@ -5,13 +5,13 @@ function Sidebar(){
                 <h3>Equipment</h3>
                 <div className="sidebar-1">
                     <a href="/" className='linkTo'>
-                        <i className="fa-solid fa-shield-halved"></i>
+                        <i className="fa-solid fa-shirt"></i>
                         <p>Armor</p>
                     </a>
                 </div>
                 <div className="sidebar-1">
                     <a href="/weapons" className='linkTo'>
-                        <i className="fa-solid fa-gun"></i>
+                        <i className="fa-solid fa-shield-halved"></i>
                         <p>Weapon</p>
                     </a>
                 </div>

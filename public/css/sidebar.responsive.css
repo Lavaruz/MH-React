@@ -1,0 +1,35 @@
+@media only screen and (max-width: 600px) {
+    .sidebar{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: .3rem;
+    }
+    .sidebar-stick{
+        display: flex;
+        flex-direction: row;
+        height: max-content;
+        position: relative;
+        min-height: max-content;
+        justify-content: space-around;
+    }
+    .sidebar-stick h3{
+        display: none;
+    }
+    .sidebar-1{
+        padding: .3rem;
+    }
+    .sidebar-1 a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .sidebar-1 a p{
+        margin: .2rem 0;
+        font-size: .8rem;
+    }
+}

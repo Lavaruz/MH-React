@@ -7,7 +7,7 @@ function Navbar(){
                 <div className="nav-brand">
                     <a href="/#">
                         {/* <h2>Monster Hunter Wiki</h2> */}
-                        <img src="/img/brand.png" alt=""  width={180}/>
+                        <img src="/img/brand.png" alt=""/>
                     </a>
                 </div>
                 <div className="nav-social">

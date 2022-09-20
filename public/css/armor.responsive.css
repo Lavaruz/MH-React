@@ -1,0 +1,7 @@
+@media only screen and (max-width: 600px) {
+    .armors-main{
+        display: flex;
+        flex-direction: column;
+        gap: .875rem;
+    }
+}

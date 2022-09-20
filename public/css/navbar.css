@@ -31,3 +31,6 @@ a{
 .nav-brand h2{
     margin: 0;
 }
+.nav-brand a img{
+    width: 180px;
+}
