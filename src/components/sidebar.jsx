@@ -15,7 +15,7 @@ function Sidebar(){
                         <p>Weapon</p>
                     </a>
                 </div>
-                <h3>Monster List</h3>
+                {/* <h3>Monster List</h3>
                 <div className="sidebar-1">
                     <a className='linkTo' href='/monster'>
                         <i className="fa-solid fa-ghost"></i>
@@ -27,7 +27,7 @@ function Sidebar(){
                         <i className="fa-solid fa-map"></i>
                         <p>Events</p>
                     </a>
-                </div>
+                </div> */}
             </div>
         </div>
     )

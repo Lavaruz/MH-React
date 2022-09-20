@@ -19,7 +19,7 @@ function Armors(){
         if (observer.current) observer.current.disconnect()
         observer.current = new IntersectionObserver(entires => {
             if(entires[0].isIntersecting){
-                setLt(prev => prev+9)
+                setLt(prev => prev+24)
             }
         })
         if (node) observer.current.observe(node)
