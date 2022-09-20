@@ -29,7 +29,7 @@ function ArmorSets(props){
     if(armors){
         content = (
             armors.map(armor => {
-                let armorUrl = `/armor/${armor.id}`
+                let armorUrl = `/armors/${armor.id}`
                 return(
                     <Link to={armorUrl} key={armor.name}>
                         <div className="armor-set">

@@ -22,11 +22,10 @@ function Sidebar(){
                         <p>Monster</p>
                     </a>
                 </div>
-                <h3>Map Route</h3>
                 <div className="sidebar-1">
-                    <a className='linkTo' href='/map'>
+                    <a className='linkTo' href='/events'>
                         <i className="fa-solid fa-map"></i>
-                        <p>Map</p>
+                        <p>Events</p>
                     </a>
                 </div>
             </div>
