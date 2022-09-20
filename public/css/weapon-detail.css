@@ -192,15 +192,15 @@
 .weapon-stats{
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: max-content 1fr;
 }
 .weapon-stats-right, .weapon-stats-left{
     display: grid;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .weapon-durability{
-    padding: 1rem;
+    padding: .5rem 2rem 1rem;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     border-radius: 5px;
     background-color: white;
@@ -210,7 +210,7 @@ table{
 }
 table, th, td{
     border: 1px solid lightgray;
-    padding: .2rem .5rem;
+    padding: .2rem 1rem;
     text-align: center;
 }
 th{

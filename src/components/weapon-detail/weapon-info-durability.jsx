@@ -24,13 +24,13 @@ function WeaponDurability(props){
                 <thead>
                     <tr>
                         <th>level</th>
-                        <th>red</th>
-                        <th>orange</th>
-                        <th>yellow</th>
-                        <th>green</th>
-                        <th>blue</th>
-                        <th>white</th>
-                        <th>purple</th>
+                        <th><div className="red"></div></th>
+                        <th><div className="orange"></div></th>
+                        <th><div className="yellow"></div></th>
+                        <th><div className="green"></div></th>
+                        <th><div className="blue"></div></th>
+                        <th><div className="white"></div></th>
+                        <th><div className="purple"></div></th>
                     </tr>
                 </thead>
                 <tbody>
