@@ -11,12 +11,12 @@ function WeaponUpgrade(props){
             )
         })
     }else{
-        content = <div className="armor-craft"><p>no material needed to craft this armor</p></div>
+        content = <div className="armor-craft"><p>no material needed to upgrade this armor</p></div>
     }
     return(
         <>
         <div className="armor-skills">
-            <h3>Upgrade Material</h3>
+            <h3>Upgrade Materials</h3>
             {content}
         </div>
         </>

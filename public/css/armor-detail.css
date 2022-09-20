@@ -60,7 +60,7 @@
 .defense-title{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 3rem;
+    /* gap: 1rem; */
     margin: 1rem 0;
     align-items: center;
 }
@@ -145,7 +145,7 @@
     text-align: center;
     margin: 1rem 0;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    padding: .3rem 1rem;
+    padding: 1rem 1rem;
 }
 .armor-sets h3{
     text-align: left;

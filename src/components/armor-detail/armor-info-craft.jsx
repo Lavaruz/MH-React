@@ -16,7 +16,7 @@ function ArmorCraft(props){
     return(
         <>
         <div className="armor-skills">
-            <h3>Crafting Material</h3>
+            <h3>Crafting Materials</h3>
             {content}
         </div>
         </>

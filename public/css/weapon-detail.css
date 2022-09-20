@@ -73,7 +73,7 @@
 .defense-title{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 3rem;
+    /* gap: 3rem; */
     margin: 1rem 0;
     align-items: center;
 }
@@ -117,29 +117,6 @@
     grid-template-columns: 1.5fr 1fr;
     gap: 1rem;
 }
-.weapon-skills{
-    background-color: white;
-    height: max-content;
-    display: grid;
-    /* border: 1px solid lightgray; */
-    border-radius: 5px;
-    padding: 1rem;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-}
-.weapon-skills h3{
-    margin: 0 0 .3rem;
-}
-.weapon-skill{
-    border-radius: 3px;
-}
-.weapon-skill h4{
-    color: #313131;
-    margin: .7rem 0 0;
-}
-.weapon-skill p{
-    margin: 0;
-}
-
 .weapon-craft{
     display: flex;
     gap: .5rem;
@@ -195,7 +172,8 @@
     grid-template-columns: max-content 1fr;
 }
 .weapon-stats-right, .weapon-stats-left{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: .5rem;
 }
 
@@ -207,6 +185,7 @@
 }
 table{
     border-collapse: collapse;
+    margin-bottom: 1rem;
 }
 table, th, td{
     border: 1px solid lightgray;
@@ -215,4 +194,27 @@ table, th, td{
 }
 th{
     text-transform: capitalize;
+}
+
+
+
+.weapon-elements{
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border-radius: 5px;
+}
+.weapon-elements h3{
+    margin: 0;
+}
+.weapon-elements-each{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.weapon-element h4{
+    margin-bottom: 0;
+}
+.weapon-element p{
+    margin-top: .3rem;
 }

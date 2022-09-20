@@ -34,11 +34,11 @@ function ArmorDetail(){
             resistances={armor.resistances}
             assets={armor.assets ? armor.assets : []}
             />
+            <ArmorSets armorSets={armor.armorSet} />
             <div className="armor-skills-craft">
                 <ArmorSkills skills={armor.skills}/>
                 <ArmorCraft materials={armor.crafting.materials} />
             </div>
-            <ArmorSets armorSets={armor.armorSet} />
         </div>
     }
 
