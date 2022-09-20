@@ -7,6 +7,9 @@ import WeaponData from "../components/weapon-detail/weapon-info-data"
 // import ArmorSkills from "../components/armor-detail/armor-info-skills"
 import Sidebar from '../components/sidebar'
 import WeaponEvolution from "../components/weapon-detail/weapon-info-evolution"
+import WeaponDurability from "../components/weapon-detail/weapon-info-durability"
+import WeaponCraft from "../components/weapon-detail/weapon-info-craft"
+import WeaponUpgrade from "../components/weapon-detail/weapon-info-upgrade"
 
 function WeaponDetail(){
     const {id} = useParams()
@@ -33,6 +36,15 @@ function WeaponDetail(){
             assets={weapon.assets}
             />
             <WeaponEvolution crafting={weapon.crafting} />
+            <div className="weapon-stats">
+                <div className="weapon-stats-left">
+                    <WeaponDurability durability={weapon.durability} />
+                </div>
+                <div className="weapon-stats-right">
+                    <WeaponCraft materials={weapon.crafting.craftingMaterials} />
+                    <WeaponUpgrade materials={weapon.crafting.upgradeMaterials} />
+                </div>
+            </div>
             {/* <div className="armor-skills-craft">
                 <ArmorSkills skills={armor.skills}/>
                 <ArmorCraft materials={armor.crafting.materials} />
