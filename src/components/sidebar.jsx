@@ -10,7 +10,7 @@ function Sidebar(){
                     </a>
                 </div>
                 <div className="sidebar-1">
-                    <a href="/weapon" className='linkTo'>
+                    <a href="/weapons" className='linkTo'>
                         <i className="fa-solid fa-gun"></i>
                         <p>Weapon</p>
                     </a>

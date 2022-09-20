@@ -47,9 +47,9 @@ function Weapons(){
     if(weapons){
         content = weapons.map((weapon, index) => {
             if(weapons.length === index + 1){
-                return <Weapon ref={lastWeaponCallback} name={weapon.name} img={weapon.assets.image} type={weapon.type} icon={weapon.assets.icon} key={index}/>
+                return <Weapon ref={lastWeaponCallback} id={weapon.id} name={weapon.name} img={weapon.assets ? weapon.assets.image : ''} type={weapon.type} icon={weapon.assets ? weapon.assets.icon : ''} rarity={weapon.rarity} key={index}/>
             }else{
-                return <Weapon name={weapon.name} img={weapon.assets.image} type={weapon.type} icon={weapon.assets.icon} key={index}/>
+                return <Weapon id={weapon.id} name={weapon.name} img={weapon.assets ? weapon.assets.image : ''} type={weapon.type} icon={weapon.assets ? weapon.assets.icon : ''} rarity={weapon.rarity} key={index}/>
             }
         })
     }

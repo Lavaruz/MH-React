@@ -1,7 +1,7 @@
 import React from "react"
 
 const Armor = React.forwardRef((props, ref)=>{
-    const destinationLink = `/armor/${props.id}`
+    const destinationLink = `/armors/${props.id}`
     return (
         <a href={destinationLink}>
             <div ref={ref} className="armor">
@@ -10,7 +10,7 @@ const Armor = React.forwardRef((props, ref)=>{
                     <b>Rank</b>
                     <p className="armor-rank">{props.rank}</p>
                 </div>
-                <img src={props.img} alt="" width={100}/>
+                <img className="armor-image" src={props.img} alt="" width={100}/>
             </div>
         </a>
     )

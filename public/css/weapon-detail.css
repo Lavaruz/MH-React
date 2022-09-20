@@ -1,16 +1,16 @@
 
-.armor-detail-main{
+.weapon-detail-main{
     padding: 1rem 0;
-    display: grid;
-    grid-template-columns: max-content 1fr;
+    /* display: grid;
+    grid-template-columns: max-content 1fr; */
     border-radius: 5px;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
-.armor-detail-core{
-    padding: 0 2rem;
+.weapon-detail-core{
+    padding: 1rem 2rem;
     text-align: center;
     display: grid;
-    justify-content: center;
+    grid-template-columns: 1fr max-content;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     background-image: url('../img/background.webp');
     background-size: cover;
@@ -18,42 +18,55 @@
     border-radius: 5px;
     background-color: white;
 }
-.armor-detail-info h3{
+.weapon-detail-info{
+    text-align: left;
+}
+.wepaon-detail-info-sword{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.weapon-detail-info h3{
     margin-bottom: .5rem;
 }
-.armor-detail-info p{
+.weapon-detail-info p{
     margin-top: 0;
 }
-.armor-detail-img img{
-    width: 100px;
+.weapon-detail-img img{
+    width: 200px;
     margin: 0 1rem;
 }
-.armor-detail-type-rank{
-    padding: 1rem;
+.weapon-detail-type-rank{
+    border-radius: 5px;
+    background-color: rgba(44, 32, 30, 0.6);
+    padding: .3rem 1rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
-.armor-detail-type, .armor-detail-rank, .armor-detail-rarity{
+.weapon-detail-type-rank hr{
+    border-color: white;
+}
+.weapon-detail-type, .weapon-detail-rank, .weapon-detail-rarity{
     text-align: center;
     padding: .5rem;
 }
-.armor-detail-type h3, .armor-detail-rank h3, .armor-detail-rarity h3{
+.weapon-detail-type h3, .weapon-detail-rank h3, .weapon-detail-rarity h3{
     text-transform: capitalize;
     margin: .5rem 0;
 }
-.armor-detail-type p, .armor-detail-rank p, .armor-detail-rarity p{
+.weapon-detail-type p, .weapon-detail-rank p, .weapon-detail-rarity p{
     margin: 0;
     color: rgb(145, 145, 145);
 }
 
-.armor-detail-stat{
+.weapon-detail-stat{
     background-color: white;
     border-radius: 5px;
     padding: 1rem 2rem;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.armor-detail-stat h3{
+.weapon-detail-stat h3{
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -99,12 +112,12 @@
 }
 
 
-.armor-skills-craft{
+.weapon-skills-craft{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 1rem;
 }
-.armor-skills{
+.weapon-skills{
     background-color: white;
     height: max-content;
     display: grid;
@@ -113,62 +126,65 @@
     padding: 1rem;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.armor-skills h3{
+.weapon-skills h3{
     margin: 0 0 .3rem;
 }
-.armor-skill{
+.weapon-skill{
     border-radius: 3px;
 }
-.armor-skill h4{
+.weapon-skill h4{
     color: #313131;
     margin: .7rem 0 0;
 }
-.armor-skill p{
+.weapon-skill p{
     margin: 0;
 }
 
-.armor-craft{
+.weapon-craft{
     display: flex;
     gap: .5rem;
     height: max-content;
 }
-.armor-craft p{
+.weapon-craft p{
     color: #313131;
     margin: .2rem 0;
 }
 
 
-.armor-sets{
+.weapon-sets{
     /* border: 1px solid lightgray; */
     background-color: white;
     border-radius: 5px;
     text-align: center;
     margin: 1rem 0;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    padding: .3rem 1rem;
+    padding: .3rem 2rem 1rem;
 }
-.armor-sets h3{
+.weapon-sets h3{
     text-align: left;
     margin: 1rem 0 .5rem;
 }
-.armor-sets-display{
+.weapon-sets-display{
     display: flex;
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
     padding: .5rem 1rem;
 }
-.armor-set{
-    border-radius: 5px;
-    padding: .5rem 2rem;
+.weapon-set{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    padding: .5rem 1rem;
     background-image: url('../img/background.webp');
     background-size: cover;
     color: #d0d0d0;
+    border-radius: 5px;
 }
-.armor-set p{
-    text-align: center;
+.weapon-set-info{
+    text-align: left;
+}
+.weapon-set p{
+    text-align: left;
     margin: 0 0 .3rem;
-}
-.armor-set hr{
-    margin-bottom: .3rem;
 }

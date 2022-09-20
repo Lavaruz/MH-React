@@ -22,6 +22,9 @@
 .armor-info{
     text-align: left;
 }
+.armor-info h3{
+    max-width: 150px;
+}
 .armor-info h5{
     margin: 0;
 }
@@ -29,8 +32,14 @@
     margin: 0 0 1rem;
 }
 .armor:hover{
-    transform: scale(1.01);
+    position: relative;
+    transform: scale(1.05);
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.armor:hover .armor-image{
+    position:absolute;
+    right: 0;
+    width: 130px;
 }

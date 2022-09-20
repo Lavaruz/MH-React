@@ -6,6 +6,7 @@ import Armors from './views/armors'
 import Weapons from './views/weapons';
 import ArmorDetail from './views/armor-detail';
 import Footer from './components/footer';
+import WeaponDetail from './views/weapon-detail';
 
 
 function App() {
@@ -14,12 +15,15 @@ function App() {
       <Navbar/>
       <div className='main'>
         <Routes>
-          <Route path='/' element={<Navigate to='/armor'/>}/>
-          <Route path='/armor'>
+          <Route path='/' element={<Navigate to='/armors'/>}/>
+          <Route path='/armors'>
             <Route index element={<Armors/>}/>
             <Route path=':id' element={<ArmorDetail/>}/>
           </Route>
-          <Route path='/weapon' element={<Weapons/>}/>
+          <Route path='/weapons'>
+            <Route index element={<Weapons/>}/>
+            <Route path=':id' element={<WeaponDetail/>}/>
+          </Route>
         </Routes>
         <Footer/>
       </div>

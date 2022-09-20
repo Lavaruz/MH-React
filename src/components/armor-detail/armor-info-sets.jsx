@@ -35,7 +35,7 @@ function ArmorSets(props){
                         <div className="armor-set">
                             <img src={armor.assets ? armor.assets.imageMale : ''} alt="" width={80} title={armor.name}/>
                             <hr />
-                            <p>{armor.type}</p>
+                            <p><b>{armor.type}</b></p>
                         </div>
                     </Link>
                 )
@@ -46,7 +46,7 @@ function ArmorSets(props){
     if(armorSet){
         return(
             <div className="armor-sets">
-                <h3>Sets</h3>
+                <h3>Armor Sets</h3>
                 <div className="armor-sets-display">
                     {content}
                 </div>
