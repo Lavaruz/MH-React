@@ -38,8 +38,12 @@
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
 }
-.armor:hover .armor-image{
+/* .armor:hover .armor-image{
     position:absolute;
     right: 0;
-    width: 130px;
+    width: 120px;
+} */
+
+.search-item{
+    padding: .7rem 1rem;
 }

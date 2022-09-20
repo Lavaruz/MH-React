@@ -1,5 +1,7 @@
 import axios from 'axios'
 import { useCallback, useEffect, useRef, useState } from 'react'
+import ArmorSearch from '../components/armor-search'
+import Loading from '../components/loading'
 
 import Sidebar from '../components/sidebar'
 import Weapon from '../components/weapon'
@@ -7,9 +9,11 @@ import Weapon from '../components/weapon'
 function Weapons(){
     const url = 'https://mhw-db.com/weapons/'
     let content = null
+    let loading = ''
 
     const [weapons, setWeapons] = useState([])
     const [lt, setLt] = useState(16)
+    const [query, setQuery] = useState('')
     let gt = 0
     // const [hasMore, setHasMore] = useState(false)
 
@@ -53,10 +57,31 @@ function Weapons(){
             }
         })
     }
+
+    let weaponSearch = ArmorSearch(query, 'weapons')
+    if (query.length !== 0){
+        content = weaponSearch.armor.map((weapon, index) => {
+            return(
+                <Weapon id={weapon.id} name={weapon.name} img={weapon.assets ? weapon.assets.image : ''} type={weapon.type} icon={weapon.assets ? weapon.assets.icon : ''} rarity={weapon.rarity} key={index}/>
+            )
+        })
+        loading = ''
+    }else{
+        loading = <Loading />
+    }
+
     return(
         <div className='main-content'>
-            <Sidebar/>
-            <div className='armors-main'>{content}</div>
+            <div className="main-left">
+                <Sidebar/>
+            </div>
+            <div className="main-right">
+                <input type="text" className='search-item' placeholder='Search Armor' onChange={(e)=> {
+                    setQuery(e.target.value)
+                }}/>
+                <div className='armors-main'>{content}</div>
+                {loading}
+            </div>
         </div>
         )
 }
