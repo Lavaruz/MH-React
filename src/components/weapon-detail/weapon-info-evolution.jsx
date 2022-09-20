@@ -10,19 +10,21 @@ function WeaponEvolution(props){
 
     const [weapons, setWeapon] = useState(null)
     useEffect(() => {
-        const fetchMH = () => axios.get(url, {
-            params: {
-              q:{
-                id: {
-                    '$in': weaponEvo
+        if(weaponEvo.length !== 0){
+            const fetchMH = () => axios.get(url, {
+                params: {
+                  q:{
+                    id: {
+                        '$in': weaponEvo
+                    }
+                  }
                 }
-              }
-            }
-        });
-        fetchMH()
-            .then(res => {
-                setWeapon(res.data)
-            })
+            });
+            fetchMH()
+                .then(res => {
+                    setWeapon(res.data)
+                })
+        }
     },[url, weaponEvo])
 
     if(weapons){
@@ -45,8 +47,11 @@ function WeaponEvolution(props){
             )
         }else{
             content = <p>this weapon can't be upgrade</p>
-        }
     }
+    }else{
+            content = <p>this weapon can't be upgrade</p>
+    }
+    
 
     if(weaponEvo){
         return(
