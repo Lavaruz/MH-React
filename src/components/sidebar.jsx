@@ -2,17 +2,17 @@ function Sidebar(){
     return(
         <div className="sidebar">
             <div className="sidebar-stick">
-                <h3>Equipment</h3>
+                <h3>Equipment Lists</h3>
                 <div className="sidebar-1">
                     <a href="/" className='linkTo'>
-                        <i className="fa-solid fa-shirt"></i>
-                        <p>Armor</p>
+                        <img src="/img/armor.webp" alt=""/>
+                        <p>Armors</p>
                     </a>
                 </div>
                 <div className="sidebar-1">
                     <a href="/weapons" className='linkTo'>
-                        <i className="fa-solid fa-shield-halved"></i>
-                        <p>Weapon</p>
+                        <img src="/img/weapon.webp" alt=""/>
+                        <p>Weapons</p>
                     </a>
                 </div>
                 {/* <h3>Monster List</h3>

@@ -11,7 +11,7 @@ function ArmorCraft(props){
             )
         })
     }else{
-        content = <div className="armor-craft"><p>no material needed to craft this armor</p></div>
+        content = <div className="armor-craft"><p>N/A</p></div>
     }
     return(
         <>

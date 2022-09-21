@@ -61,19 +61,19 @@ function ArmorData(props){
                         <h3>Resistantces</h3>
                         <div className="resistances-element">
                             <div className="resis-element">
-                                <p><i className="fa-solid fa-fire" title="fire"></i>: {props.resistances.fire} </p>
+                                <p><i className="fa-solid fa-fire" title="fire"></i> : {props.resistances.fire} </p>
                             </div>
                             <div className="resis-element">
-                                <p><i className="fa-solid fa-water" title="water"></i>: {props.resistances.water} </p>
+                                <p><i className="fa-solid fa-water" title="water"></i> : {props.resistances.water} </p>
                             </div>
                             <div className="resis-element">
-                                <p><i className="fa-solid fa-icicles" title="ice"></i>: {props.resistances.ice} </p>
+                                <p><i className="fa-solid fa-icicles" title="ice"></i> : {props.resistances.ice} </p>
                             </div>
                             <div className="resis-element">
-                                <p><i className="fa-solid fa-bolt-lightning" title="thunder"></i>: {props.resistances.thunder} </p>
+                                <p><i className="fa-solid fa-bolt-lightning" title="thunder"></i> : {props.resistances.thunder} </p>
                             </div>
                             <div className="resis-element">
-                                <p><i className="fa-solid fa-dragon" title="dragon"></i>: {props.resistances.dragon} </p>
+                                <p><i className="fa-solid fa-dragon" title="dragon"></i> : {props.resistances.dragon} </p>
                             </div>
                         </div>
                     </div>

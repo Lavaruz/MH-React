@@ -4,10 +4,12 @@ function ArmorSkills(props){
     if(props.skills.length !== 0){
         content = props.skills.map(skill => {
             return(
-                <div className="armor-skill" key={skill.skillName}>
-                    <h4>{skill.skillName}</h4>
-                    <p>{skill.description}</p>
-                </div>
+                <li key={skill.skillName}>
+                    <div className="armor-skill">
+                        <h4>{skill.skillName}</h4>
+                        <p>{skill.description}</p>
+                    </div>
+                </li>
             )
         })
     }else{
@@ -17,7 +19,9 @@ function ArmorSkills(props){
         <>
         <div className="armor-skills">
             <h3>Skills</h3>
-            {content}
+            <ul>
+                {content}
+            </ul>
         </div>
         </>
     )

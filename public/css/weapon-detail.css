@@ -178,8 +178,13 @@ th{
     flex-direction: column;
     gap: .5rem;
 }
+.weapon-elements-each ul{
+    padding: 0 1.1rem;
+    margin: 0;
+}
 .weapon-element h4{
     margin-bottom: 0;
+    text-transform: capitalize;
 }
 .weapon-element p{
     margin-top: .3rem;

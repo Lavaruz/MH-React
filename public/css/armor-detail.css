@@ -119,6 +119,13 @@
 .armor-skill{
     border-radius: 3px;
 }
+.armor-skills ul{
+    padding: 0 1.1rem;
+    margin: 0;
+}
+.armor-skills ul li{
+    padding: 0;
+}
 .armor-skill h4{
     color: #313131;
     margin: .7rem 0 0;
@@ -133,7 +140,7 @@
     height: max-content;
 }
 .armor-craft p{
-    color: #313131;
+    color: #6d6d6d;
     margin: .2rem 0;
 }
 
