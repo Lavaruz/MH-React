@@ -6,6 +6,8 @@
         right: 0;
         background-color: white;
         padding: .3rem;
+        border: 1px solid lightgray;
+        border-width: 1px 0 0 0;
     }
     .sidebar-stick{
         display: flex;

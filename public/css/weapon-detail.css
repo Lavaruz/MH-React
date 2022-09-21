@@ -129,7 +129,7 @@
 .weapon-stats{
     display: grid;
     gap: 1rem;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 .weapon-stats-right, .weapon-stats-left{
     display: flex;
@@ -142,6 +142,12 @@
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     border-radius: 5px;
     background-color: white;
+}
+.weapon-durability img{
+    width: 100%;
+}
+.weapon-durability p{
+    margin: 0;
 }
 table{
     border-collapse: collapse;

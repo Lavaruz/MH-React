@@ -4,7 +4,7 @@ function WeaponDurability(props){
     if (props.durability){
                 content = props.durability.map((durability,index) => {
                     return (
-                        <tr key={durability}>
+                        <tr key={index}>
                         <td>+{index+1}</td>
                         <td>{durability.red}</td>
                         <td>{durability.orange}</td>
@@ -20,23 +20,29 @@ function WeaponDurability(props){
     return (
         <div className="weapon-durability">
             <h3>Durability</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>level</th>
-                        <th><div className="red"></div></th>
-                        <th><div className="orange"></div></th>
-                        <th><div className="yellow"></div></th>
-                        <th><div className="green"></div></th>
-                        <th><div className="blue"></div></th>
-                        <th><div className="white"></div></th>
-                        <th><div className="purple"></div></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {content}
-                </tbody>
-            </table>
+            <p>example: </p>
+            <a href="https://twitter.com/zulliethewitch/status/1557824593250902018?lang=ar">
+                <img src="/img/durability.png" alt=""/>
+            </a>
+            <div className="weapon-durability-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>level</th>
+                            <th><div className="red"></div></th>
+                            <th><div className="orange"></div></th>
+                            <th><div className="yellow"></div></th>
+                            <th><div className="green"></div></th>
+                            <th><div className="blue"></div></th>
+                            <th><div className="white"></div></th>
+                            <th><div className="purple"></div></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {content}
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }

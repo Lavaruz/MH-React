@@ -76,7 +76,7 @@ function Weapons(){
                 <Sidebar/>
             </div>
             <div className="main-right">
-                <input type="text" className='search-item' placeholder='Search Armor' onChange={(e)=> {
+                <input type="text" className='search-item' placeholder='Search Weapon' onChange={(e)=> {
                     setQuery(e.target.value)
                 }}/>
                 <div className='armors-main'>{content}</div>

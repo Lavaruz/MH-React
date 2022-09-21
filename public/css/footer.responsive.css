@@ -1,5 +1,5 @@
 @media only screen and (max-width: 600px) {
     footer{
-        display: none;
+        padding: 1rem 0;
     }
 }
