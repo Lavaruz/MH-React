@@ -20,7 +20,7 @@ function WeaponDurability(props){
     return (
         <div className="weapon-durability">
             <h3>Durability</h3>
-            <p>example: </p>
+            <p>explanation: </p>
             <a href="https://twitter.com/zulliethewitch/status/1557824593250902018?lang=ar">
                 <img src="/img/durability.png" alt=""/>
             </a>
