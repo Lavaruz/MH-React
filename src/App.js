@@ -7,6 +7,7 @@ import Weapons from './views/weapons';
 import ArmorDetail from './views/armor-detail';
 import Footer from './components/footer';
 import WeaponDetail from './views/weapon-detail';
+import Events from './views/events';
 
 
 function App() {
@@ -23,6 +24,10 @@ function App() {
           <Route path='/weapons'>
             <Route index element={<Weapons/>}/>
             <Route path=':id' element={<WeaponDetail/>}/>
+          </Route>
+          <Route path='/events'>
+            <Route index element={<Events/>}/>
+            {/* <Route path=':id' element={<WeaponDetail/>}/> */}
           </Route>
         </Routes>
         <Footer/>

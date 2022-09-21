@@ -1,0 +1,21 @@
+.main-event{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.main-right h1{
+    margin: 0;
+}
+
+.event-each{
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    gap: 1rem;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: 5px;
+    /* background-image: url('../img/background.png');
+    background-size: cover;
+    color: #080800; */
+}

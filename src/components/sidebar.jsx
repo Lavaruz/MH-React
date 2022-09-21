@@ -15,19 +15,12 @@ function Sidebar(){
                         <p>Weapons</p>
                     </a>
                 </div>
-                {/* <h3>Monster List</h3>
-                <div className="sidebar-1">
-                    <a className='linkTo' href='/monster'>
-                        <i className="fa-solid fa-ghost"></i>
-                        <p>Monster</p>
-                    </a>
-                </div>
                 <div className="sidebar-1">
                     <a className='linkTo' href='/events'>
-                        <i className="fa-solid fa-map"></i>
+                        <img src="/img/event.webp" alt="" />
                         <p>Events</p>
                     </a>
-                </div> */}
+                </div>
             </div>
         </div>
     )
