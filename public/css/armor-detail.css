@@ -140,6 +140,10 @@
     height: max-content;
 }
 .armor-craft p{
+    color: #313131;
+    margin: .2rem 0;
+}
+.armor-craft-na p{
     color: #6d6d6d;
     margin: .2rem 0;
 }
@@ -171,6 +175,10 @@
     background-image: url('../img/background.webp');
     background-size: cover;
     color: #d0d0d0;
+    transition: .5s;
+}
+.armor-set:hover{
+    transform: scale(1.05);
 }
 .armor-set p{
     text-align: center;
