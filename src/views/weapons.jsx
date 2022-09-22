@@ -13,7 +13,10 @@ function Weapons(){
 
     const [weapons, setWeapons] = useState([])
     const [lt, setLt] = useState(16)
-    const [query, setQuery] = useState('')
+    const [queryByName, setQueryByName] = useState('')
+    const [queryByDamageType, setQueryByDamageType] = useState('')
+    const [queryByType, setQueryByType] = useState('')
+    const [queryByRarity, setQueryByRarity] = useState('')
     let gt = 0
     // const [hasMore, setHasMore] = useState(false)
 
@@ -58,8 +61,8 @@ function Weapons(){
         })
     }
 
-    let weaponSearch = ArmorSearch('weapons', query)
-    if (query.length !== 0){
+    let weaponSearch = ArmorSearch('weapons', queryByName, queryByDamageType, queryByType, queryByRarity)
+    if (queryByName.length !== 0 || queryByDamageType.length !== 0 || queryByType.length !== 0 || queryByRarity.length !== 0){
         content = weaponSearch.armor.map((weapon, index) => {
             return(
                 <Weapon id={weapon.id} name={weapon.name} img={weapon.assets ? weapon.assets.image : ''} type={weapon.type} icon={weapon.assets ? weapon.assets.icon : ''} rarity={weapon.rarity} key={index}/>
@@ -76,9 +79,54 @@ function Weapons(){
                 <Sidebar/>
             </div>
             <div className="main-right">
-                <input type="text" className='search-item' placeholder='Search Weapon' onChange={(e)=> {
-                    setQuery(e.target.value)
-                }}/>
+            <div className="main-search">
+                    <input type="text" className='search-item' placeholder='Search armor by name' onChange={(e)=> {
+                        setQueryByName(e.target.value)
+                    }}/>
+                    <select name="" id="" className='search-select' onChange={(e)=> {
+                        setQueryByRarity(e.target.value)
+                    }}>
+                        <option value="">Rarity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+
+                    <select name="" id="" className='search-select' onChange={(e) => {
+                        setQueryByDamageType(e.target.value)
+                    }}>
+                        <option value="">Damage Type</option>
+                        <option value="saver">saver</option>
+                        <option value="blunt">blunt</option>
+                        <option value="projectile">projectile</option>
+                    </select>
+
+                    <select name="" id="" className='search-select' onChange={(e)=> {
+                        setQueryByType(e.target.value)
+                    }}>
+                        <option value="">Type</option>
+                        <option value="great-sword">great-sword</option>
+                        <option value="long-sword">long-sword</option>
+                        <option value="sword-and-shield">sword-and-shield</option>
+                        <option value="dual-blades">dual-blades</option>
+                        <option value="hammer">hammer</option>
+                        <option value="hunting-horn">hunting-horn</option>
+                        <option value="lance">lance</option>
+                        <option value="gunlance">gunlance</option>
+                        <option value="switch-axe">switch-axe</option>
+                        <option value="charge-blade">charge-blade</option>
+                        <option value="insect-glaive">insect-glaive</option>
+                        <option value="light-bowgun">light-bowgun</option>
+                        <option value="heavy-bowgun">heavy-bowgun</option>
+                        <option value="bow">bow</option>
+                    </select>
+
+                </div>
                 <div className='armors-main'>{content}</div>
                 {loading}
             </div>

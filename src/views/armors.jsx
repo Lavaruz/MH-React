@@ -80,9 +80,9 @@ function Armors(){
             </div>
             <div className="main-right">
                 <div className="main-search">
-                <input type="text" className='search-item' placeholder='Search armor by name' onChange={(e)=> {
-                    setQueryByName(e.target.value)
-                }}/>
+                    <input type="text" className='search-item' placeholder='Search armor by name' onChange={(e)=> {
+                        setQueryByName(e.target.value)
+                    }}/>
                     <select name="" id="" className='search-select' onChange={(e)=> {
                         setQueryByRarity(e.target.value)
                     }}>

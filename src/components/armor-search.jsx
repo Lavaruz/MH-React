@@ -14,7 +14,11 @@ function ArmorSearch(url, queryByName,queryByRank, queryByType, queryByRarity){
                 $like : `%${queryByName}%`
             }
         }if (queryByRank){
-            qParams.rank = queryByRank
+            if (['projectile','saver','blunt'].includes(queryByRank)){
+                qParams.damageType = queryByRank
+            }else{
+                qParams.rank = queryByRank
+            }
         }if (queryByType){
             qParams.type = queryByType
         }if (queryByRarity){
