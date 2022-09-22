@@ -58,7 +58,7 @@ function Weapons(){
         })
     }
 
-    let weaponSearch = ArmorSearch(query, 'weapons')
+    let weaponSearch = ArmorSearch('weapons', query)
     if (query.length !== 0){
         content = weaponSearch.armor.map((weapon, index) => {
             return(

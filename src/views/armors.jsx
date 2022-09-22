@@ -13,7 +13,10 @@ function Armors(){
 
     const [armors, setArmor] = useState([])
     const [lt, setLt] = useState(16)
-    const [query, setQuery] = useState('')
+    const [queryByName, setQueryByName] = useState('')
+    const [queryByRank, setQueryByRank] = useState('')
+    const [queryByType, setQueryByType] = useState('')
+    const [queryByRarity, setQueryByRarity] = useState('')
 
     let gt = 0
     // const [hasMore, setHasMore] = useState(false)
@@ -57,8 +60,8 @@ function Armors(){
         })
     }
 
-    let armorSearch = ArmorSearch(query, 'armor')
-    if (query.length !== 0){
+    let armorSearch = ArmorSearch('armor', queryByName, queryByRank, queryByType, queryByRarity)
+    if (queryByName.length !== 0 || queryByRank.length !== 0 || queryByType.length !== 0 || queryByRarity.length !== 0){
         content = armorSearch.armor.map((armor, index) => {
             return(
                 <Armor name={armor.name} img={armor.assets ? armor.assets.imageMale : ''} rank={armor.rank} id={armor.id} key={index}/>
@@ -76,9 +79,45 @@ function Armors(){
                 <Sidebar/>
             </div>
             <div className="main-right">
-                <input type="text" className='search-item' placeholder='Search Armor' onChange={(e)=> {
-                    setQuery(e.target.value)
+                <div className="main-search">
+                <input type="text" className='search-item' placeholder='Search armor by name' onChange={(e)=> {
+                    setQueryByName(e.target.value)
                 }}/>
+                    <select name="" id="" className='search-select' onChange={(e)=> {
+                        setQueryByRarity(e.target.value)
+                    }}>
+                        <option value="">Rarity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+
+                    <select name="" id="" className='search-select' onChange={(e) => {
+                        setQueryByRank(e.target.value)
+                    }}>
+                        <option value="">Rank</option>
+                        <option value="low">low</option>
+                        <option value="high">high</option>
+                        <option value="master">master</option>
+                    </select>
+
+                    <select name="" id="" className='search-select' onChange={(e)=> {
+                        setQueryByType(e.target.value)
+                    }}>
+                        <option value="">Type</option>
+                        <option value="chest">chest</option>
+                        <option value="gloves">gloves</option>
+                        <option value="waist">waist</option>
+                        <option value="legs">legs</option>
+                    </select>
+
+                </div>
                 <div className='armors-main'>{content}</div>
                 {loading}
             </div>

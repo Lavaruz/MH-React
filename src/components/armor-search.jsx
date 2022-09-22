@@ -1,30 +1,41 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
-function ArmorSearch(query, url){
+function ArmorSearch(url, queryByName,queryByRank, queryByType, queryByRarity){
 
     const [armor, setArmor] = useState([])
 
     useEffect(()=>{
+        let qParams = {}
         let cancle
+
+        if (queryByName){
+            qParams.name = {
+                $like : `%${queryByName}%`
+            }
+        }if (queryByRank){
+            qParams.rank = queryByRank
+        }if (queryByType){
+            qParams.type = queryByType
+        }if (queryByRarity){
+            qParams.rarity = queryByRarity
+        }
+
+        console.log(qParams);
+
         axios({
             url: `https://mhw-db.com/${url}/`,
             method: 'GET',
-            params: {
-                q: {
-                    name: {
-                        $like: `%${query}%`
-                    }
-                }
-            },
+            params: {q: qParams},
             cancelToken: new axios.CancelToken(c => cancle = c)
         }).then(res => {
             setArmor(res.data)
         }).catch(e => {
+            console.log(e);
             if(axios.isCancel(e)) return
         })
         return () => cancle()
-    },[query, url])
+    },[url, queryByName, queryByRank, queryByType, queryByRarity])
 
     return {armor}
 }

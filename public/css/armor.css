@@ -46,4 +46,14 @@
 
 .search-item{
     padding: .7rem 1rem;
+    width: 100%;
+}
+.main-search{
+    display: flex;
+    gap: 1rem;
+}
+.search-select{
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    color: #424242;
 }
