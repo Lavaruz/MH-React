@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useCallback, useEffect, useRef, useState } from 'react'
-import ArmorSearch from '../components/armor-search'
+import EquipmentSearch from '../components/equipment-search'
 import Loading from '../components/loading'
 
 import Sidebar from '../components/sidebar'
@@ -61,14 +61,22 @@ function Weapons(){
         })
     }
 
-    let weaponSearch = ArmorSearch('weapons', queryByName, queryByDamageType, queryByType, queryByRarity)
+    let weaponSearch = EquipmentSearch('weapons', queryByName, queryByDamageType, queryByType, queryByRarity)
     if (queryByName.length !== 0 || queryByDamageType.length !== 0 || queryByType.length !== 0 || queryByRarity.length !== 0){
-        content = weaponSearch.armor.map((weapon, index) => {
-            return(
-                <Weapon id={weapon.id} name={weapon.name} img={weapon.assets ? weapon.assets.image : ''} type={weapon.type} icon={weapon.assets ? weapon.assets.icon : ''} rarity={weapon.rarity} key={index}/>
+        if (weaponSearch.load){
+            content = (
+                <>
+                    <div></div>
+                    <Loading/>
+                </>
             )
-        })
-        loading = ''
+        }else{
+            content = weaponSearch.armor.map((weapon, index) => {
+                return(
+                    <Weapon id={weapon.id} name={weapon.name} img={weapon.assets ? weapon.assets.image : ''} type={weapon.type} icon={weapon.assets ? weapon.assets.icon : ''} rarity={weapon.rarity} key={index}/>
+                )
+            })
+        }
     }else{
         loading = <Loading />
     }
@@ -80,7 +88,7 @@ function Weapons(){
             </div>
             <div className="main-right">
             <div className="main-search">
-                    <input type="text" className='search-item' placeholder='Search armor by name' onChange={(e)=> {
+                    <input type="text" className='search-item' placeholder='Search weapon by name' onChange={(e)=> {
                         setQueryByName(e.target.value)
                     }}/>
                     <select name="" id="" className='search-select' onChange={(e)=> {
@@ -96,16 +104,7 @@ function Weapons(){
                         <option value="7">7</option>
                         <option value="8">8</option>
                     </select>
-
-                    <select name="" id="" className='search-select' onChange={(e) => {
-                        setQueryByDamageType(e.target.value)
-                    }}>
-                        <option value="">Damage Type</option>
-                        <option value="saver">saver</option>
-                        <option value="blunt">blunt</option>
-                        <option value="projectile">projectile</option>
-                    </select>
-
+                    
                     <select name="" id="" className='search-select' onChange={(e)=> {
                         setQueryByType(e.target.value)
                     }}>
@@ -125,6 +124,16 @@ function Weapons(){
                         <option value="heavy-bowgun">heavy-bowgun</option>
                         <option value="bow">bow</option>
                     </select>
+
+                    <select name="" id="" className='search-select' onChange={(e) => {
+                        setQueryByDamageType(e.target.value)
+                    }}>
+                        <option value="">Damage Type</option>
+                        <option value="saver">saver</option>
+                        <option value="blunt">blunt</option>
+                        <option value="projectile">projectile</option>
+                    </select>
+
 
                 </div>
                 <div className='armors-main'>{content}</div>

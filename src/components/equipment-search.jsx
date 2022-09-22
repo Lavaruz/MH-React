@@ -1,9 +1,10 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
-function ArmorSearch(url, queryByName,queryByRank, queryByType, queryByRarity){
+function EquipmentSearch(url, queryByName,queryByRank, queryByType, queryByRarity){
 
     const [armor, setArmor] = useState([])
+    const [load, setLoad] = useState(false)
 
     useEffect(()=>{
         let qParams = {}
@@ -24,9 +25,7 @@ function ArmorSearch(url, queryByName,queryByRank, queryByType, queryByRarity){
         }if (queryByRarity){
             qParams.rarity = queryByRarity
         }
-
-        console.log(qParams);
-
+        setLoad(true)
         axios({
             url: `https://mhw-db.com/${url}/`,
             method: 'GET',
@@ -34,6 +33,7 @@ function ArmorSearch(url, queryByName,queryByRank, queryByType, queryByRarity){
             cancelToken: new axios.CancelToken(c => cancle = c)
         }).then(res => {
             setArmor(res.data)
+            setLoad(false)
         }).catch(e => {
             console.log(e);
             if(axios.isCancel(e)) return
@@ -41,7 +41,7 @@ function ArmorSearch(url, queryByName,queryByRank, queryByType, queryByRarity){
         return () => cancle()
     },[url, queryByName, queryByRank, queryByType, queryByRarity])
 
-    return {armor}
+    return {armor, load}
 }
 
-export default ArmorSearch
+export default EquipmentSearch

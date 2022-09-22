@@ -8,6 +8,7 @@ import ArmorDetail from './views/armor-detail';
 import Footer from './components/footer';
 import WeaponDetail from './views/weapon-detail';
 import Events from './views/events';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {

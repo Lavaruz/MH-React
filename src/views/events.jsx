@@ -3,8 +3,8 @@ import axios from "axios"
 import { useEffect, useState, useRef, useCallback } from "react"
 
 import Quest from "../components/event"
-import ArmorSearch from "../components/armor-search"
 import Loading from "../components/loading"
+import EquipmentSearch from "../components/equipment-search"
 
 export default function Events(){
     const url = 'https://mhw-db.com/events/'
@@ -58,7 +58,7 @@ export default function Events(){
     }
 
 
-    let eventSearch = ArmorSearch(query, 'events')
+    let eventSearch = EquipmentSearch(query, 'events')
     if (query.length !== 0){
         content = eventSearch.armor.map((event, index) => {
             return(
@@ -77,7 +77,7 @@ export default function Events(){
             </div>
             <div className="main-right">
                 <h1>Event</h1>
-                <input type="text" className='search-item' placeholder='Search Armor' onChange={(e)=> {
+                <input type="text" className='search-item' placeholder='Search event' onChange={(e)=> {
                     setQuery(e.target.value)
                 }}/>
                 <div className="main-event">

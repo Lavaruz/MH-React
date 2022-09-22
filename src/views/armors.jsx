@@ -2,11 +2,12 @@ import axios from 'axios'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 import Armor from '../components/armor'
-import ArmorSearch from '../components/armor-search'
+import EquipmentSearch from '../components/equipment-search'
 import Loading from '../components/loading'
 import Sidebar from '../components/sidebar'
 
 function Armors(){
+
     const url = 'https://mhw-db.com/armor/'
     let content = null
     let loading = false
@@ -60,13 +61,22 @@ function Armors(){
         })
     }
 
-    let armorSearch = ArmorSearch('armor', queryByName, queryByRank, queryByType, queryByRarity)
+    let armorSearch = EquipmentSearch('armor', queryByName, queryByRank, queryByType, queryByRarity)
     if (queryByName.length !== 0 || queryByRank.length !== 0 || queryByType.length !== 0 || queryByRarity.length !== 0){
-        content = armorSearch.armor.map((armor, index) => {
-            return(
-                <Armor name={armor.name} img={armor.assets ? armor.assets.imageMale : ''} rank={armor.rank} id={armor.id} key={index}/>
+        if (armorSearch.load){
+            content = (
+                <>
+                    <div></div>
+                    <Loading/>
+                </>
             )
-        })
+        }else{
+            content = armorSearch.armor.map((armor, index) => {
+                return(
+                    <Armor name={armor.name} img={armor.assets ? armor.assets.imageMale : ''} rank={armor.rank} id={armor.id} key={index}/>
+                )
+            })
+        }
         loading = ''
     }else{
         loading = <Loading />
