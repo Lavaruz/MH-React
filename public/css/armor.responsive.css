@@ -4,4 +4,7 @@
         flex-direction: column;
         gap: .875rem;
     }
+    .main-search{
+        flex-direction: column;
+    }
 }

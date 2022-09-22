@@ -57,3 +57,8 @@
     border-radius: 5px;
     color: #424242;
 }
+.main-search-select{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
