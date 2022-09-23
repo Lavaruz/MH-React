@@ -59,6 +59,7 @@
 }
 .main-search-select{
     display: flex;
-    gap: 1rem;
-    justify-content: space-evenly;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }

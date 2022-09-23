@@ -16,7 +16,7 @@ function Sidebar(){
                     </a>
                 </div>
                 <h3>Others</h3>
-                <div className="sidebar-1">
+                {/* <div className="sidebar-1">
                     <a className='linkTo' href='/monsters' title="not ready yet">
                         <img src="/img/monster.webp" alt="" />
                         <p>Monsters</p>
@@ -27,7 +27,7 @@ function Sidebar(){
                         <img src="/img/item.webp" alt="" />
                         <p>Items</p>
                     </a>
-                </div>
+                </div> */}
                 <div className="sidebar-1">
                     <a className='linkTo' href='/events' title="not ready yet">
                         <img src="/img/event.webp" alt="" />

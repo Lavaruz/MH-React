@@ -6,5 +6,10 @@
     }
     .main-search{
         flex-direction: column;
+        flex-shrink: 1;
+        width: auto;
+    }
+    .search-item{
+        width: 90%;
     }
 }

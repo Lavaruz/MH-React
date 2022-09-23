@@ -101,21 +101,6 @@ function Weapons(){
                         setQueryByName(e.target.value)
                     }}/>
                     <div className="main-search-select">
-
-                        <select name="" id="" className='search-select' onChange={(e)=> {
-                            setQueryByRarity(e.target.value)
-                        }}>
-                            <option value="">Rarity</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                        </select>
-                        
                         <select name="" id="" className='search-select' onChange={(e)=> {
                             setQueryByType(e.target.value)
                         }}>
@@ -143,6 +128,20 @@ function Weapons(){
                             <option value="saver">saver</option>
                             <option value="blunt">blunt</option>
                             <option value="projectile">projectile</option>
+                        </select>
+
+                        <select name="" id="" className='search-select' onChange={(e)=> {
+                            setQueryByRarity(e.target.value)
+                        }}>
+                            <option value="">Rarity</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
                         </select>
                     </div>
                 </div>
