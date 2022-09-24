@@ -6,13 +6,16 @@
     }
     .main-search{
         flex-direction: column;
+        justify-content: center;
         flex-shrink: 1;
         width: auto;
     }
     .search-item{
-        width: 90%;
+        width: 89%;
     }
     .main-search-select{
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        justify-content: space-evenly;
     }
 }

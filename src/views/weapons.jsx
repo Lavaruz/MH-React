@@ -100,6 +100,7 @@ function Weapons(){
                     <input type="text" className='search-item' placeholder='Search weapon by name' onChange={(e)=> {
                         setQueryByName(e.target.value)
                     }}/>
+                    <div className="drop">
                     <div className="main-search-select">
                         <select name="" id="" className='search-select' onChange={(e)=> {
                             setQueryByType(e.target.value)
@@ -145,6 +146,7 @@ function Weapons(){
                         </select>
                     </div>
                 </div>
+                    </div>
                 <div className='armors-main'>{content}</div>
                 {loading}
             </div>
