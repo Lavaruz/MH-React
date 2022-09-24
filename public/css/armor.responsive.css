@@ -12,4 +12,7 @@
     .search-item{
         width: 90%;
     }
+    .main-search-select{
+        flex-wrap: wrap;
+    }
 }
