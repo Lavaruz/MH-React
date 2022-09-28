@@ -3,10 +3,11 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 300px;
-    margin: 3rem 0;
-    background-color: black;
+    padding: 14% 0;
+    /* margin: 3rem 0; */
+    /* background-color: black; */
     color: white;
+    background-image: url('/img/background.webp');
 }
 .home-hero h1{
     margin: 0;
@@ -100,4 +101,8 @@
 }
 .home-equipment-more a{
     color: white;
+}
+
+.home-content{
+    padding: 0 5rem;
 }

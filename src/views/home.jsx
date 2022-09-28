@@ -39,6 +39,7 @@ export default function Home() {
                 <h1>Monster Hunter Wiki</h1>
                 <p>everything about monster hunter</p>
             </div>
+            <div className="home-content">
             <div className="home-tips">
                 <div className="home-tip-title">
                     <img src="/img/ticket.webp" alt="" />
@@ -79,6 +80,8 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
+            </div>
+
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 function Footer(){
     return (
+        <div className="main-content">
         <footer>
             <hr />
             <h4>FOLLOW ME</h4>
@@ -10,6 +11,7 @@ function Footer(){
                 </div>
             </div>
         </footer>
+        </div>
     )
 }
 
