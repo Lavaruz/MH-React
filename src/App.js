@@ -1,5 +1,5 @@
 import './App.css';
-import {Routes, Route, Navigate} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 
 import Navbar from './components/navbar'
 import Armors from './views/armors'
@@ -8,6 +8,7 @@ import ArmorDetail from './views/armor-detail';
 import Footer from './components/footer';
 import WeaponDetail from './views/weapon-detail';
 import Events from './views/events';
+import Home from './views/home';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -17,7 +18,7 @@ function App() {
       <Navbar/>
       <div className='main'>
         <Routes>
-          <Route path='/' element={<Navigate to='/armors'/>}/>
+          <Route path='/' element={<Home/>}/>
           <Route path='/armors'>
             <Route index element={<Armors/>}/>
             <Route path=':id' element={<ArmorDetail/>}/>

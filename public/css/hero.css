@@ -1,0 +1,103 @@
+.home-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    margin: 3rem 0;
+    background-color: black;
+    color: white;
+}
+.home-hero h1{
+    margin: 0;
+}
+.home-hero p{
+    color: rgb(208, 208, 208);
+}
+.home-tip-title, .home-equipments-title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.home-tip-title img, .home-equipments-title img{
+    width: 30px;
+}
+
+.home-tips, .home-equipments{
+    margin: 2rem 0;
+}
+
+/* CARDS */
+
+.home-tip-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.home-tip-card{
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-tip-card:hover{
+    transform: translateY(-10px);
+}
+.home-tip-card img{
+    width: 100%;
+}
+.home-tip-card-info{
+    padding: 1rem;
+}
+.home-tip-card-info h3{
+    margin: 0;
+}
+.home-tip-card-info p{
+    margin: .5rem 0;
+    color: rgb(102, 102, 102);
+}
+
+.home-tip-card:nth-last-child(1){
+    position: relative;
+}
+.home-tip-layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-tip-layer img{
+    width: 50px;
+}
+.home-tip-layer p{
+    color: white;
+    margin: .3rem 0;
+}
+
+
+/* EQUIPMENT */
+.home-equipment{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    gap: 1rem;
+}
+.home-equipment-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+.home-equipment-more a{
+    color: white;
+}
