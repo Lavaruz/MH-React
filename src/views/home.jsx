@@ -36,8 +36,8 @@ export default function Home() {
     return(
         <div className="main-home">
             <div className="home-hero">
-                <h1>Monster Hunter Wiki</h1>
-                <p>everything about monster hunter</p>
+                <h1>Buddy, if we run into trouble, Plan A is to run away.</h1>
+                <p>"everything about monster hunter"</p>
             </div>
             <div className="home-content">
             <div className="home-tips">

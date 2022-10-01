@@ -34,3 +34,27 @@ a{
 .nav-brand a img{
     width: 180px;
 }
+
+.nav-navigate ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+    align-items: center;
+}
+.nav-navigate ul li button{
+    padding: .5rem 2rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: black;
+    color: white;
+}
+.nav-navigate ul li button:hover{
+    background-color: white;
+    color: black;
+}
+.nav-navigate ul li a{
+    font-size: .9rem;
+}
