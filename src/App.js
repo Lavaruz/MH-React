@@ -9,6 +9,7 @@ import Footer from './components/footer';
 import WeaponDetail from './views/weapon-detail';
 import Events from './views/events';
 import Home from './views/home';
+import TipsDetail from './views/tips-detail';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -19,6 +20,9 @@ function App() {
       <div className='main'>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route path='/tips'>
+            <Route path=':title' element={<TipsDetail/>} />
+          </Route>
           <Route path='/armors'>
             <Route index element={<Armors/>}/>
             <Route path=':id' element={<ArmorDetail/>}/>

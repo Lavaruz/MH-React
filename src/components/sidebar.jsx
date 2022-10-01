@@ -4,7 +4,7 @@ function Sidebar(){
             <div className="sidebar-stick">
                 <h3>Equipment Lists</h3>
                 <div className="sidebar-1">
-                    <a href="/" className='linkTo'>
+                    <a href="/armors" className='linkTo'>
                         <img src="/img/armor.webp" alt=""/>
                         <p>Armors</p>
                     </a>

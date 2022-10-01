@@ -47,20 +47,20 @@ export default function Home() {
                 </div>
                 <div className="home-tip-cards">
                     <Card title='Beginner Tips'/>
-                    <Card title='Killing boss in easy way' />
-                    <Card title='3 Tips to Defeat Astalos in Monster Hunter Rise: Sunbreak' />
+                    {/* <Card title='Killing boss in easy way' />
+                    <Card title='3 Tips to Defeat Astalos in Monster Hunter Rise: Sunbreak' /> */}
                     <div className="home-tip-card">
                         <a href="/#">
                             <img src="/img/hero.jpg" alt=""/>
                             <div className="home-tip-card-info">
-                                <h3>Advance</h3>
-                                <p>How to start hunting as a beginer, and how to get good in early game</p>
+                                <h3>Create your Article</h3>
+                                <p>Description</p>
                             </div>
                         </a>
                         <a href="/#">
                             <div className="home-tip-layer">
                                     <img src="/img/drink.webp" alt="" />
-                                    <p>"create your own news"</p>
+                                    <p>"create your own article"</p>
                             </div>
                         </a>
                     </div>

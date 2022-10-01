@@ -1,7 +1,8 @@
 export default function Card(props){
+    let tipsLink = `/tips/${props.title}`
     return (
         <div className="home-tip-card">
-            <a href="/#">
+            <a href={tipsLink}>
                 <img src="/img/hero.jpg" alt=""/>
                 <div className="home-tip-card-info">
                     <h3>{props.title}</h3>
