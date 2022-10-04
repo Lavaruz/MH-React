@@ -4,11 +4,66 @@ import { useState } from "react";
 import ArmorData from "../components/armor-detail/armor-info-data";
 import Card from "../components/card";
 
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
 export default function Home() {
 
     const [armor,  setArmor] = useState()
     let url = 'https://mhw-db.com/armor/89'
     let content = null
+
+    let notResponsive = (
+        <>
+            <Card title='Beginner Tips'/>
+                {/* <Card title='Killing boss in easy way' />
+                <Card title='3 Tips to Defeat Astalos in Monster Hunter Rise: Sunbreak' /> */}
+                <div className="home-tip-card">
+                    <a href="/#">
+                        <img src="/img/gorila.jfif" alt=""/>
+                        <div className="home-tip-card-info">
+                            <h3>Create your Article</h3>
+                            <p>Description</p>
+                        </div>
+                    </a>
+                    <a href="/#">
+                        <div className="home-tip-layer">
+                                <p>"create your own article"</p>
+                        </div>
+                    </a>
+                </div>
+        </>
+    )
+    let responsiveCarousel = (
+        <Carousel showArrows={false} showIndicators={false}>
+            <div>
+                <Card title='Beginner Tips'/>
+            </div>
+            <div>
+                <Card title='Killing boss in easy way' />
+            </div>
+            <div>
+                <Card title='3 Tips to Defeat Astalos in Monster Hunter Rise: Sunbreak' />
+            </div>
+            <div>
+            <div className="home-tip-card">
+                    <a href="/#">
+                        <img src="/img/gorila.jfif" alt=""/>
+                        <div className="home-tip-card-info">
+                            <h3>Create your Article</h3>
+                            <p>Description</p>
+                        </div>
+                    </a>
+                    <a href="/#">
+                        <div className="home-tip-layer">
+                                <p>"create your own article"</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </Carousel>
+    )
 
 
     useEffect(()=> {
@@ -46,42 +101,18 @@ export default function Home() {
                     <h2>Hunter Tip</h2>
                 </div>
                 <div className="home-tip-cards">
-                    <Card title='Beginner Tips'/>
-                    {/* <Card title='Killing boss in easy way' />
-                    <Card title='3 Tips to Defeat Astalos in Monster Hunter Rise: Sunbreak' /> */}
-                    <div className="home-tip-card">
-                        <a href="/#">
-                            <img src="/img/hero.jpg" alt=""/>
-                            <div className="home-tip-card-info">
-                                <h3>Create your Article</h3>
-                                <p>Description</p>
-                            </div>
-                        </a>
-                        <a href="/#">
-                            <div className="home-tip-layer">
-                                    <img src="/img/drink.webp" alt="" />
-                                    <p>"create your own article"</p>
-                            </div>
-                        </a>
-                    </div>
+                    {window.innerWidth <= 760 ? responsiveCarousel : notResponsive}
                 </div>
             </div>
             <div className="home-equipments">
                 <div className="home-equipments-title">
                     <img src="/img/armor.webp" alt="" />
-                    <h2>Equipments</h2>
+                    <h2>Iconic Armor</h2>
                 </div>
                 <div className="home-equipment">
                     {content}
-                    <div className="home-equipment-more">
-                        <a href="/armors">
-                            <img src="img/item.webp" alt="" />
-                            <p>find more</p>
-                        </a>
-                    </div>
                 </div>
             </div>
-
             </div>
         </div>
     )

@@ -2,4 +2,7 @@
     .nav-brand a img{
         width: 100px;
     }
+    .nav-navigate ul li a{
+        font-size: .85rem;
+    }
 }

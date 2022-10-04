@@ -1,0 +1,28 @@
+@media only screen and (max-width: 600px) {
+    .home-hero h1{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .home-hero p{
+        font-size: 1.1rem;
+    }
+    .home-hero{
+        max-width: 90vw;
+        padding: 20% 5%;
+    }
+
+    .home-equipments-title h2, .home-tip-title h2{
+        font-size: 1.5rem;
+    }
+
+    .home-tip-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .home-tip-cards{
+        display: block;
+    }
+    .home-tip-card{
+        margin: 0 .3rem;
+    }
+}

@@ -7,6 +7,9 @@
     gap: 1rem;
     align-items: center;
 }
+.tips-title-autor p{
+    margin: 0;
+}
 .tips-title-image{
     text-align: center;
 }

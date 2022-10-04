@@ -16,8 +16,8 @@ function Navbar(){
                 <div className="nav-navigate">
                     <ul>
                         <li><a href="/armors">Equipments</a></li>
-                        <li><a href="/events">Events</a></li>
-                        <li><a href="/write-tips"><button>SignIn</button></a></li>
+                        {/* <li><a href="/events">Events</a></li> */}
+                        {/* <li><a href="/write-tips"><button>SignIn</button></a></li> */}
                     </ul>
                 </div>
             </div>

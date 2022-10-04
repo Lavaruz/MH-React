@@ -25,11 +25,7 @@ a{
 }
 .nav-brand{
     display: flex;
-    /* gap: 1rem; */
     align-items: center;
-}
-.nav-brand h2{
-    margin: 0;
 }
 .nav-brand a img{
     width: 180px;
