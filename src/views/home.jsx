@@ -36,7 +36,7 @@ export default function Home() {
         </>
     )
     let responsiveCarousel = (
-        <Carousel showArrows={false} showIndicators={false}>
+        <Carousel showArrows={false} showIndicators={false} autoPlay={true} showThumbs={false} showStatus={false}>
             <div>
                 <Card title='Beginner Tips'/>
             </div>
