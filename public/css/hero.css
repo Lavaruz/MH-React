@@ -28,7 +28,7 @@
 
 .home-community-pattreon{
     display: grid;
-    grid-template-columns: .9fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     border: 1px solid #ccc;
     padding: 2rem;
     justify-content: space-between;

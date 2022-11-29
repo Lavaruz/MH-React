@@ -14,8 +14,8 @@ function Home(){
 
             <div className="main-right">
                 <div className="home-header">
-                    <h1>Lavaruz - Monster Hunter World Wiki</h1>
-                    <p>Lavaruz is a wiki for Monster Hunter World. Check our guides, tier lists and reviews for characters available in the game.</p>
+                    <h1>Lavaruz - Monster Hunter: World Wiki</h1>
+                    <p>Lavaruz is a wiki for Monster Hunter: World. Check our guides, tier lists and reviews for characters available in the game.</p>
                 </div>
                 <div className="home-download">
                     <h2>Play on PC</h2>

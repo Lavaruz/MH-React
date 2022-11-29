@@ -36,7 +36,7 @@ function Sidebar(){
                 <div className="sidebar-download">
                     <a href="https://store.steampowered.com/app/582010/Monster_Hunter_World/" target={"_blank"}>
                         <div className="sidebar-download-item">
-                            <p><img src="/img/download.webp" alt="" />Play On Steam</p>
+                            <p><img src="/img/download.webp" alt="" />Download on Steam</p>
                         </div>
                     </a>
                 </div>
