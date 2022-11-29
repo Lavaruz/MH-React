@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer";
 import Sidebar from "../components/sidebar";
 
 function About(){
@@ -18,7 +19,7 @@ return(
         </div>
 
         <div className="about-mhw">
-            <p>Welcome to a new world! Take on the role of a hunter and slay ferocious monsters in a living, breathing
+            <p>Welcome to a new world! Take on the role of a hunter and slay ferocious monsters in a living, breat<br />hing
                 ecosystem where you can use the landscape and its diverse inhabitants to get the upper hand. Hunt alone
                 or in co-op with up to three other players, and use materials collected from fallen foes to craft new
                 gear and take on even bigger, badder beasts!</p>
@@ -29,7 +30,7 @@ return(
                 As a hunter, you'll take on quests to hunt monsters in a variety of habitats.
                 Take down these monsters and receive materials that you can use to create stronger weapons and armor in
                 order to hunt even more dangerous monsters.
-                <br />
+                <br /><br />
                 In Monster Hunter: World, the latest installment in the series, you can enjoy the ultimate hunting
                 experience, using everything at your disposal to hunt monsters in a new world teeming with surprises and
                 excitement.</p>
@@ -37,15 +38,15 @@ return(
             <p><b>Setting</b> <br />
                 Once every decade, elder dragons trek across the sea to travel to the land known as the New World in a
                 migration referred to as the Elder Crossing.
-                <br />
+                <br /><br />
                 To get to the bottom of this mysterious phenomenon, the Guild has formed the Research Commission,
                 dispatching them in large fleets to the New World.
-                <br />
+                <br /><br />
                 As the Commission sends its Fifth Fleet in pursuit of the colossal elder dragon, Zorah Magdaros, one
                 hunter is about to embark on a journey grander than anything they could have ever imagined.</p>
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/582010/extras/MHW_story.jpg?t=1661838392" alt="" />
             <h3>ECOSYSTEM</h3>
-            <p><b>A World That Breathes Life</b><br />
+            <p><b>A World That Breat hes Life</b><br />
                 There are various locations teeming with wildlife. Expeditions into these locales are bound to turn up
                 interesting discoveries.</p>
             <h3>HUNTING</h3>
@@ -83,6 +84,29 @@ return(
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/582010/extras/MHW_otomo.jpg?t=1661838392" alt="" />
         </div>
 
+        <div className="about-social">
+            <h2>Official Links</h2>
+            <hr />
+            <div className="about-social-link">
+                <div className="about-social-link-item">
+                    <p><i class="uil uil-window"></i>Website</p>
+                    <a href="http://www.monsterhunterworld.com/us/"><i class="uil uil-link-h"></i>Open in new window</a>
+                </div>
+                <div className="about-social-link-item">
+                    <p><i class="uil uil-facebook"></i>Facebook</p>
+                    <a href="https://www.facebook.com/MonsterHunterWorldGame/"><i class="uil uil-link-h"></i>Open in new window</a>
+                </div>
+                <div className="about-social-link-item">
+                    <p><i class="uil uil-twitter"></i>Twitter</p>
+                    <a href="https://twitter.com/monsterhunter"><i class="uil uil-link-h"></i>Open in new window</a>
+                </div>
+                <div className="about-social-link-item">
+                    <p><i class="uil uil-instagram-alt"></i>Instagram</p>
+                    <a href="https://www.instagram.com/monsterhunterworld/"><i class="uil uil-link-h"></i>Open in new window</a>
+                </div>
+            </div>
+        </div>
+
         <div className="about-system">
             <h2>System Requirement</h2>
             <hr />
@@ -96,7 +120,7 @@ return(
                     <p><span> Memory:</span> 8 GB RAM</p>
                     <p><span> Graphics:</span> NVIDIA®GeForce®GTX 760 or GTX1050 or AMD Radeon™ R7 260x or RX 560</p>
                     <p><span> DirectX:</span> Version 11</p>
-                    <p><span> Network:</span> Broadband Internet connection</p>
+                    <p><span> Network:</span> Broad<br />band Internet connection</p>
                     <p> <span> Storage:</span> 52 GB available space</p>
                     <p> <span> Sound Card:</span> DirectSound (DirectX® 9.0c or later)</p>
                     <p> <span> Additional Notes:</span> - These specs allow for the game to be played in 1080p/30fps
@@ -111,14 +135,15 @@ return(
                     <p><span> Memory:</span> 8 GB RAM</p>
                     <p><span> Graphics:</span> NVIDIA® GeForce® GTX 1060 (VRAM 3GB) or GTX 1650 / AMD Radeon™ RX 480 or RX 570</p>
                     <p><span> DirectX:</span> Version 11</p>
-                    <p><span> Network:</span> Broadband Internet connection</p>
+                    <p><span> Network:</span> Broad<br />band Internet connection</p>
                     <p> <span> Storage:</span> 52 GB available space</p>
                     <p> <span> Sound Card:</span> DirectSound (DirectX® 9.0c or later)</p>
                     <p> <span> Additional Notes:</span> - These specs allow for the game to be played in 1080p/30fps with graphics settings at "High". - 64-bit processor and operating system are required. - Windows 10 (Version 1809 or later) and a 4GB VRAM GPU (graphics board or video card) are required for DirectX 12 API.</p>
                 </div>
+        
             </div>
         </div>
-
+        <Footer />
     </div>
 </div>
 )

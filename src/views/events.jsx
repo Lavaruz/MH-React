@@ -5,6 +5,7 @@ import { useEffect, useState, useRef, useCallback } from "react"
 import Quest from "../components/event"
 import Loading from "../components/loading"
 import EquipmentSearch from "../components/equipment-search"
+import Footer from "../components/footer"
 
 export default function Events(){
     const url = 'https://mhw-db.com/events/'
@@ -87,6 +88,7 @@ export default function Events(){
                     {content}
                 </div>
                 {loading}
+                <Footer />
             </div>
         </div>
     )

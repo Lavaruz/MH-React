@@ -11,6 +11,8 @@ import Events from './views/events';
 import Home from './views/home';
 import About from './views/about';
 import Blog from './views/blog';
+import Blog1 from './views/blog/blog1';
+import Blog2 from './views/blog/blog2';
 // import TipsDetail from './views/tips-detail';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -47,10 +49,12 @@ function App() {
 
           <Route path='/blog'>
             <Route index element={<Blog/>}/>
+            <Route path='1' element={<Blog1/>}/>
+            <Route path='2' element={<Blog2/>}/>
           </Route>
           
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </>
   );

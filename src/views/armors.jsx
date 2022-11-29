@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 import Armor from '../components/armor'
 import EquipmentSearch from '../components/equipment-search'
+import Footer from '../components/footer'
 import Loading from '../components/loading'
 import Sidebar from '../components/sidebar'
 
@@ -144,6 +145,7 @@ function Armors(){
                 </div>
                 <div className='armors-main'>{content}</div>
                 {loading}
+                <Footer />
             </div>
         </div>
         )

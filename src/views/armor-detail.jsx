@@ -7,6 +7,7 @@ import ArmorData from "../components/armor-detail/armor-info-data"
 import ArmorSkills from "../components/armor-detail/armor-info-skills"
 import Sidebar from '../components/sidebar'
 import ArmorSets from '../components/armor-detail/armor-info-sets'
+import Footer from "../components/footer"
 
 function ArmorDetail(){
     const {id} = useParams()
@@ -48,6 +49,7 @@ function ArmorDetail(){
             <Sidebar/>
             <div className="vline"></div>
             <div className="detail-right">{content}</div>
+            <Footer />
         </div>
         </>
     )

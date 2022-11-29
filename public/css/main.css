@@ -27,7 +27,7 @@ hr{ display: block; height: 1px;
     gap: 1rem;
 }
 .main-right{
-    padding: 2rem 3rem;
+    padding: 2rem 4rem;
     /* background-image: url("/img/wallpaper.jpg"); */
     background-color: #23242a;
 }

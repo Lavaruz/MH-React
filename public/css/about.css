@@ -33,3 +33,28 @@
 .system-minimum p span, .system-recommended p span{
     color: gray;
 }
+
+.about-social-link-item{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.about-social-link-item p{
+    width: 200px;
+    margin: .7rem 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.about-social-link-item p i{
+    font-size: 1rem;
+}
+.about-social-link-item a{
+    color: #009eec;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.about-social-link-item a i{
+    font-size: 1.5rem;
+}

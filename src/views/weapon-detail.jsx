@@ -12,6 +12,7 @@ import WeaponUpgrade from "../components/weapon-detail/weapon-info-upgrade"
 import WeaponAttack from "../components/weapon-detail/weapon-info-attack"
 import ArmorCraft from "../components/armor-detail/armor-info-craft"
 import WeaponElements from "../components/weapon-detail/weapon-info-element"
+import Footer from "../components/footer"
 
 function WeaponDetail(){
     const {id} = useParams()
@@ -58,6 +59,7 @@ function WeaponDetail(){
             <Sidebar/>
             <div className="vline"></div>
             <div className="detail-right">{content}</div>
+            <Footer />
         </div>
         </>
     )

@@ -1,5 +1,5 @@
 footer{
-    padding: 2rem 5rem;
+    padding: 2rem 0;
 }
 footer h4{
     margin: 1rem 0 0;
@@ -15,4 +15,5 @@ footer h4{
 .footer-social i{
     font-size: 1.2rem;
     margin: 1rem 0;
+    color: white;
 }

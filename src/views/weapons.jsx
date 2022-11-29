@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import EquipmentSearch from '../components/equipment-search'
+import Footer from '../components/footer'
 import Loading from '../components/loading'
 
 import Sidebar from '../components/sidebar'
@@ -152,6 +153,7 @@ function Weapons(){
                     </div>
                 <div className='armors-main'>{content}</div>
                 {loading}
+                <Footer />
             </div>
         </div>
         )
