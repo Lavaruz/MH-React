@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/sidebar";
 
 function Home(){
+    const navigate = useNavigate()
     return(
         <div className='main-content'>
             <div className="main-left">
@@ -21,7 +23,7 @@ function Home(){
                     <div className="home-download-img">
                         <div className="home-download-img-layer">
                             <h2>Play Monster Hunter World</h2>
-                            <button>Learn more</button>
+                            <button onClick={ ()=> navigate('/about')}>Learn more</button>
                         </div>
                     </div>
                 </div>

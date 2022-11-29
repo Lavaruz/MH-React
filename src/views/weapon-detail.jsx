@@ -56,7 +56,8 @@ function WeaponDetail(){
         <>
         <div className='main-content'>
             <Sidebar/>
-            <div>{content}</div>
+            <div className="vline"></div>
+            <div className="detail-right">{content}</div>
         </div>
         </>
     )

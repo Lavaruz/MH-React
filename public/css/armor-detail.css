@@ -159,7 +159,7 @@
     padding: 1rem 1rem;
 }
 .armor-sets h3{
-    text-align: left;
+    text-align: center;
     margin: 1rem 0 .5rem;
 }
 .armor-sets-display{
@@ -186,4 +186,8 @@
 }
 .armor-set hr{
     margin-bottom: .3rem;
+}
+
+.detail-right{
+    padding: 0 3rem;
 }

@@ -46,7 +46,7 @@ function ArmorSets(props){
     if(armorSet){
         return(
             <div className="armor-sets">
-                <h3>Armor Sets</h3>
+                <h3>~ Armor Sets ~</h3>
                 <div className="armor-sets-display">
                     {content}
                 </div>
