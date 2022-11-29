@@ -33,7 +33,7 @@ return(
                 In Monster Hunter: World, the latest installment in the series, you can enjoy the ultimate hunting
                 experience, using everything at your disposal to hunt monsters in a new world teeming with surprises and
                 excitement.</p>
-            <img src="/img/desc1.jpg" alt="" />
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/582010/extras/MHW_introduction.jpg?t=1661838392" alt="" />
             <p><b>Setting</b> <br />
                 Once every decade, elder dragons trek across the sea to travel to the land known as the New World in a
                 migration referred to as the Elder Crossing.
@@ -43,7 +43,7 @@ return(
                 <br />
                 As the Commission sends its Fifth Fleet in pursuit of the colossal elder dragon, Zorah Magdaros, one
                 hunter is about to embark on a journey grander than anything they could have ever imagined.</p>
-            <img src="/img/desc2.jpg" alt="" />
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/582010/extras/MHW_story.jpg?t=1661838392" alt="" />
             <h3>ECOSYSTEM</h3>
             <p><b>A World That Breathes Life</b><br />
                 There are various locations teeming with wildlife. Expeditions into these locales are bound to turn up
@@ -55,7 +55,7 @@ return(
                 There are fourteen different weapons at the hunter's disposal, each with its own unique characteristics
                 and attacks. Many hunters acquire proficiency in multiple types, while others prefer to attain mastery
                 of one.</p>
-            <img src="/img/desc3.jpg" alt="" />
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/582010/extras/MHW_hunters.jpg?t=1661838392" alt="" />
             <p><b>Scoutflies</b><br />
                 Monster tracks, such as footprints and gashes, dot each locale. Your Scoutflies will remember the scent
                 of a monster and guide you to other nearby tracks. And as you gather more tracks, the Scoutflies will

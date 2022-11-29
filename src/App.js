@@ -1,5 +1,5 @@
 import './App.css';
-import {Routes, Route, Navigate} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 
 import Navbar from './components/navbar'
 import Armors from './views/armors'

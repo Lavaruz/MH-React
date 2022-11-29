@@ -1,4 +1,4 @@
-import {Link, useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 function Sidebar(){
     const navigate = useNavigate()
@@ -34,7 +34,7 @@ function Sidebar(){
                 </div>
                 <hr />
                 <div className="sidebar-download">
-                    <a href="https://store.steampowered.com/app/582010/Monster_Hunter_World/" target={"_blank"}>
+                    <a href="https://store.steampowered.com/app/582010/Monster_Hunter_World/" rel="noopener noreferrer" target={"_blank"}>
                         <div className="sidebar-download-item">
                             <p><img src="/img/download.webp" alt="" />Download on Steam</p>
                         </div>
