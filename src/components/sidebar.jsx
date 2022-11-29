@@ -10,7 +10,7 @@ function Sidebar(){
                     <div className="sidebar-main-item" onClick={()=> navigate('/home')}>
                         <p>Home</p>
                     </div>
-                    <div className="sidebar-main-item" onClick={()=> navigate('/weapons')}>
+                    <div className="sidebar-main-item" onClick={()=> navigate('/about')}>
                         <p>About The Game</p>
                     </div>
                 </div>
