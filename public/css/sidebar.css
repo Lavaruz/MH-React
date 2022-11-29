@@ -15,16 +15,15 @@
 
 .sidebar-data-item, .sidebar-main-item, .sidebar-blog-item, .sidebar-download-item{
     cursor: pointer;
-    padding: 0 4rem;
-    /* display: flex;
-    align-items: center;
-    gap: .5rem; */
+    padding: 0 3rem;
 }
 
 .sidebar-data-item p img, .sidebar-main-item p img, .sidebar-blog-item p img, .sidebar-download-item p img{
-    width: 20px;
+    width: 22px;
 }
-
+.sidebar-main-item p i, .sidebar-download-item p i{
+    font-size: 22px;
+}
 .sidebar-data-item p, .sidebar-main-item p, .sidebar-blog-item p, .sidebar-download-item p{
     display: flex;
     align-items: center;
@@ -32,28 +31,14 @@
     margin: 1.5rem 0;
     font-family: "Poppins";
     font-weight: 400;
+    font-size: .9rem;
 }
 
 .sidebar-download-item p{
-    color: brown;
+    color: #009eec;
     font-weight: bold;
 }
 
-/* .sidebar-1{
-    padding: .3rem 10rem .3rem 0;
-    align-items: center;
-}
-.sidebar-1 a{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-.sidebar-1 a p{
-    color: #374151;
-}
-.sidebar-1 a img{
-    width: 25px;
-} */
 .linkTo p{
     margin: .5rem 0;
 }

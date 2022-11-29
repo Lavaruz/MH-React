@@ -8,10 +8,10 @@ function Sidebar(){
             <div className="sidebar-stick">
                 <div className="sidebar-main">
                     <div className="sidebar-main-item" onClick={()=> navigate('/')}>
-                        <p><img src="/img/home.webp" alt="" />Home</p>
+                        <p><i class="uil uil-estate"></i>Home</p>
                     </div>
                     <div className="sidebar-main-item" onClick={()=> navigate('/about')}>
-                        <p><img src="/img/about.webp" alt="" />About The Game</p>
+                        <p><i class="uil uil-exclamation-circle"></i>About The Game</p>
                     </div>
                 </div>
                 <hr />
@@ -23,7 +23,7 @@ function Sidebar(){
                         <p><img src="/img/armor.webp" alt="" /> Armors</p>
                     </div>
                     <div className="sidebar-data-item" onClick={()=> navigate('/events')}>
-                        <p><img src="/img/ticket.webp" alt="" /> Event</p>
+                        <p><img src="/img/ticket.webp" alt="" /> Events</p>
                     </div>
                 </div>
                 <hr />
@@ -36,7 +36,7 @@ function Sidebar(){
                 <div className="sidebar-download">
                     <a href="https://store.steampowered.com/app/582010/Monster_Hunter_World/" rel="noopener noreferrer" target={"_blank"}>
                         <div className="sidebar-download-item">
-                            <p><img src="/img/download.webp" alt="" />Download on Steam</p>
+                            <p><i class="uil uil-desktop"></i>Play on Steam</p>
                         </div>
                     </a>
                 </div>

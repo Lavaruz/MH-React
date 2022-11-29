@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body{
-    background-color: #f8fafc;
+    background-color: #1c1d21;
+    color: white;
 }
 
 p,h1,h2,h3,h4,h5{
@@ -9,13 +10,13 @@ p,h1,h2,h3,h4,h5{
 }
 
 hr{ display: block; height: 1px;
-    border: 0; border-top: 1px solid #ccc;
+    border: 0; border-top: 1px solid #33343a;
     margin: 0 0 1rem; padding: 0; 
 
 }
 
 .main-content{
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     display: grid;
     grid-template-columns: max-content max-content 1fr;
     /* gap: 3rem; */
@@ -26,7 +27,9 @@ hr{ display: block; height: 1px;
     gap: 1rem;
 }
 .main-right{
-    padding: 0 3rem;
+    padding: 2rem 3rem;
+    /* background-image: url("/img/wallpaper.jpg"); */
+    background-color: #23242a;
 }
 .loading{
     padding: 2rem 0;
@@ -35,6 +38,6 @@ hr{ display: block; height: 1px;
 }
 
 .vline{
-    border-left: 1px solid #ccc;
+    border-left: 1px solid #33343a;
     height: 100%;
 }

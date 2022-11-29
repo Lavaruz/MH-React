@@ -29,11 +29,11 @@
 .home-community-pattreon{
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    border: 1px solid #ccc;
+    border: 1px solid #33343a;
     padding: 2rem;
     justify-content: space-between;
-    background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,0,0,0.11808473389355745) 100%);
+    background: rgb(35,36,42);
+background: linear-gradient(0deg, rgba(35,36,42,1) 0%, rgba(255,0,0,0.11808473389355745) 100%);
 
 }
 .pattreon-left button{
