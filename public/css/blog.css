@@ -1,0 +1,13 @@
+.blog-main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.blog-card img{
+    width: 100%;
+    border: 1px solid #33343a;
+}
+.blog-card-date{
+    font-size: .8rem;
+}

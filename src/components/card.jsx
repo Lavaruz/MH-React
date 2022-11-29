@@ -1,5 +1,5 @@
 export default function Card(props){
-    let tipsLink = `/tips/${props.title}`
+    let tipsLink = `/blog/${props.title}`
     return (
         <div className="home-tip-card">
             <a href={tipsLink}>

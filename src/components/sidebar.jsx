@@ -27,7 +27,7 @@ function Sidebar(){
                     </div>
                 </div>
                 <hr />
-                <div className="sidebar-blog">
+                <div className="sidebar-blog" onClick={()=> navigate('/blog')}>
                     <div className="sidebar-blog-item">
                         <p><img src="/img/blog.webp" alt="" />Blog</p>
                     </div>

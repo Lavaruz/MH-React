@@ -10,6 +10,7 @@ import WeaponDetail from './views/weapon-detail';
 import Events from './views/events';
 import Home from './views/home';
 import About from './views/about';
+import Blog from './views/blog';
 // import TipsDetail from './views/tips-detail';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -42,6 +43,10 @@ function App() {
           <Route path='/events'>
             <Route index element={<Events/>}/>
             {/* <Route path=':id' element={<WeaponDetail/>}/> */}
+          </Route>
+
+          <Route path='/blog'>
+            <Route index element={<Blog/>}/>
           </Route>
           
         </Routes>
