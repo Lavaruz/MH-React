@@ -97,6 +97,9 @@ function Armors(){
             <div className="main-left">
                 <Sidebar/>
             </div>
+            
+            <div className="vline"></div>
+
             <div className="main-right">
                 <div className="main-search">
                     <input type="text" className='search-item' placeholder='Search armor by name' onChange={(e)=> {

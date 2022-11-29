@@ -95,6 +95,9 @@ function Weapons(){
             <div className="main-left">
                 <Sidebar/>
             </div>
+            
+            <div className="vline"></div>
+            
             <div className="main-right">
             <div className="main-search">
                     <input type="text" className='search-item' placeholder='Search weapon by name' onChange={(e)=> {

@@ -14,11 +14,7 @@ function Navbar(){
                     <a href="https://github.com/Lavaruz/MH-React"><i className="github-icon fa-brands fa-github" style={{"fontSize":"1.5rem"}}></i></a>
                 </div> */}
                 <div className="nav-navigate">
-                    <ul>
-                        <li><a href="/armors">Equipments</a></li>
-                        {/* <li><a href="/events">Events</a></li> */}
-                        {/* <li><a href="/write-tips"><button>SignIn</button></a></li> */}
-                    </ul>
+                    <button><i class="uil uil-github"></i>Follow me on Github</button>
                 </div>
             </div>
         </div>

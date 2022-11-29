@@ -75,6 +75,9 @@ export default function Events(){
             <div className="main-left">
                 <Sidebar/>
             </div>
+            
+            <div className="vline"></div>
+            
             <div className="main-right">
                 <h1>Event</h1>
                 <input type="text" className='search-item' placeholder='Search event' onChange={(e)=> {

@@ -1,5 +1,5 @@
 import './App.css';
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, Navigate} from 'react-router-dom'
 
 import Navbar from './components/navbar'
 import Armors from './views/armors'
@@ -9,7 +9,8 @@ import Footer from './components/footer';
 import WeaponDetail from './views/weapon-detail';
 import Events from './views/events';
 import Home from './views/home';
-import TipsDetail from './views/tips-detail';
+import About from './views/about';
+// import TipsDetail from './views/tips-detail';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -19,22 +20,30 @@ function App() {
       <Navbar/>
       <div className='main'>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/tips'>
-            <Route path=':title' element={<TipsDetail/>} />
+
+          <Route path='/'>
+            <Route index element={<Home/>}/>
           </Route>
+
+          <Route path='/about'>
+            <Route index element={<About/>}/>
+          </Route>
+          
           <Route path='/armors'>
             <Route index element={<Armors/>}/>
             <Route path=':id' element={<ArmorDetail/>}/>
           </Route>
+
           <Route path='/weapons'>
             <Route index element={<Weapons/>}/>
             <Route path=':id' element={<WeaponDetail/>}/>
           </Route>
+
           <Route path='/events'>
             <Route index element={<Events/>}/>
             {/* <Route path=':id' element={<WeaponDetail/>}/> */}
           </Route>
+          
         </Routes>
         <Footer/>
       </div>

@@ -1,17 +1,20 @@
-.sidebar-stick{
-    border: 1px solid lightgray;
-    border-width: 0px 1px 0px 0px;
+.sidebar{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     position: sticky;
     top: 18%;
 }
-.sidebar-stick h3{
+.sidebar h3{
     margin: .5rem 0;
 }
 
-.sidebar-1{
+.sidebar-data-item, .sidebar-main-item, .sidebar-blog-item, .sidebar-download-item{
+    cursor: pointer;
+    padding: 0 4rem;
+}
+
+/* .sidebar-1{
     padding: .3rem 10rem .3rem 0;
     align-items: center;
 }
@@ -25,7 +28,7 @@
 }
 .sidebar-1 a img{
     width: 25px;
-}
+} */
 .linkTo p{
     margin: .5rem 0;
 }

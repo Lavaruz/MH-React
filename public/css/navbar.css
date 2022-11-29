@@ -1,7 +1,7 @@
-.main-content{
+/* .main-content{
     padding: 2rem 5%;
     background-color: #f8fafc;
-}
+} */
 
 a{
     color: black;
@@ -28,29 +28,22 @@ a{
     align-items: center;
 }
 .nav-brand a img{
-    width: 180px;
+    width: 150px;
 }
 
-.nav-navigate ul{
+.nav-navigate button{
     display: flex;
-    gap: 1.5rem;
-    list-style-type: none;
+    gap: .5rem;
     align-items: center;
-}
-.nav-navigate ul li button{
-    padding: .5rem 2rem;
-    background-color: transparent;
-    border: 1px solid black;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: .3s;
-    background-color: black;
+    padding: .9rem 2rem;
+    border: transparent;
+    background-color: #010409;
     color: white;
+    font-size: 2;
+    font-weight: 600;
+    font-family: 'Poppins';
+    cursor: pointer;
 }
-.nav-navigate ul li button:hover{
-    background-color: white;
-    color: black;
-}
-.nav-navigate ul li a{
-    font-size: .9rem;
+.nav-navigate button i {
+    font-size: 1.3rem;
 }

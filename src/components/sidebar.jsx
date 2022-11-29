@@ -1,38 +1,39 @@
+import {useNavigate} from 'react-router-dom'
+
 function Sidebar(){
+    const navigate = useNavigate()
+    
     return(
         <div className="sidebar">
             <div className="sidebar-stick">
-                <h3>Equipment Lists</h3>
-                <div className="sidebar-1">
-                    <a href="/armors" className='linkTo'>
-                        <img src="/img/armor.webp" alt=""/>
-                        <p>Armors</p>
-                    </a>
+                <div className="sidebar-main">
+                    <div className="sidebar-main-item" onClick={()=> navigate('/home')}>
+                        <p>Home</p>
+                    </div>
+                    <div className="sidebar-main-item" onClick={()=> navigate('/weapons')}>
+                        <p>About The Game</p>
+                    </div>
                 </div>
-                <div className="sidebar-1">
-                    <a href="/weapons" className='linkTo'>
-                        <img src="/img/weapon.webp" alt=""/>
+                <div className="sidebar-data">
+                    <div className="sidebar-data-item" onClick={()=> navigate('/weapons')}>
                         <p>Weapons</p>
-                    </a>
+                    </div>
+                    <div className="sidebar-data-item" onClick={()=> navigate('/armors')}>
+                        <p>Armors</p>
+                    </div>
+                    <div className="sidebar-data-item" onClick={()=> navigate('/events')}>
+                        <p>Event</p>
+                    </div>
                 </div>
-                <h3>Others</h3>
-                {/* <div className="sidebar-1">
-                    <a className='linkTo' href='/monsters' title="not ready yet">
-                        <img src="/img/monster.webp" alt="" />
-                        <p>Monsters</p>
-                    </a>
+                <div className="sidebar-blog">
+                    <div className="sidebar-blog-item">
+                        <p>Blog</p>
+                    </div>
                 </div>
-                <div className="sidebar-1">
-                    <a className='linkTo' href='/items' title="not ready yet">
-                        <img src="/img/item.webp" alt="" />
-                        <p>Items</p>
-                    </a>
-                </div> */}
-                <div className="sidebar-1">
-                    <a className='linkTo' href='/events' title="not ready yet">
-                        <img src="/img/event.webp" alt="" />
-                        <p>Events</p>
-                    </a>
+                <div className="sidebar-download">
+                    <div className="sidebar-download-item">
+                        <p>Play On Steam</p>
+                    </div>
                 </div>
             </div>
         </div>
