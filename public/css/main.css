@@ -4,6 +4,10 @@ body{
     background-color: #f8fafc;
 }
 
+p,h1,h2,h3,h4,h5{
+    font-family: "Poppins";
+}
+
 hr{ display: block; height: 1px;
     border: 0; border-top: 1px solid #ccc;
     margin: 0 0 1rem; padding: 0; 

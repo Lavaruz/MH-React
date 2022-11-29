@@ -7,32 +7,35 @@ function Sidebar(){
         <div className="sidebar">
             <div className="sidebar-stick">
                 <div className="sidebar-main">
-                    <div className="sidebar-main-item" onClick={()=> navigate('/home')}>
-                        <p>Home</p>
+                    <div className="sidebar-main-item" onClick={()=> navigate('/')}>
+                        <p><img src="/img/home.webp" alt="" />Home</p>
                     </div>
                     <div className="sidebar-main-item" onClick={()=> navigate('/about')}>
-                        <p>About The Game</p>
+                        <p><img src="/img/about.webp" alt="" />About The Game</p>
                     </div>
                 </div>
+                <hr />
                 <div className="sidebar-data">
                     <div className="sidebar-data-item" onClick={()=> navigate('/weapons')}>
-                        <p>Weapons</p>
+                        <p><img src="/img/weapon.webp" alt="" /> Weapons</p>
                     </div>
                     <div className="sidebar-data-item" onClick={()=> navigate('/armors')}>
-                        <p>Armors</p>
+                        <p><img src="/img/armor.webp" alt="" /> Armors</p>
                     </div>
                     <div className="sidebar-data-item" onClick={()=> navigate('/events')}>
-                        <p>Event</p>
+                        <p><img src="/img/ticket.webp" alt="" /> Event</p>
                     </div>
                 </div>
+                <hr />
                 <div className="sidebar-blog">
                     <div className="sidebar-blog-item">
-                        <p>Blog</p>
+                        <p><img src="/img/blog.webp" alt="" />Blog</p>
                     </div>
                 </div>
+                <hr />
                 <div className="sidebar-download">
                     <div className="sidebar-download-item">
-                        <p>Play On Steam</p>
+                        <p><img src="/img/download.webp" alt="" />Play On Steam</p>
                     </div>
                 </div>
             </div>

@@ -9,9 +9,34 @@
     margin: .5rem 0;
 }
 
+.sidebar-stick hr{
+    margin: 1.2rem 0;
+}
+
 .sidebar-data-item, .sidebar-main-item, .sidebar-blog-item, .sidebar-download-item{
     cursor: pointer;
     padding: 0 4rem;
+    /* display: flex;
+    align-items: center;
+    gap: .5rem; */
+}
+
+.sidebar-data-item p img, .sidebar-main-item p img, .sidebar-blog-item p img, .sidebar-download-item p img{
+    width: 20px;
+}
+
+.sidebar-data-item p, .sidebar-main-item p, .sidebar-blog-item p, .sidebar-download-item p{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+.sidebar-download-item p{
+    color: brown;
+    font-weight: bold;
 }
 
 /* .sidebar-1{
