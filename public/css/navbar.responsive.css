@@ -1,8 +1,14 @@
 @media only screen and (max-width: 600px) {
+    .navbar{
+        padding: 0 1rem;
+    }
     .nav-brand a img{
         width: 100px;
     }
-    .nav-navigate ul li a{
-        font-size: .85rem;
+    .nav-navigate button{
+        padding: .3rem 1rem;
+    }
+    .nav-navigate button p{
+        display: none;
     }
 }

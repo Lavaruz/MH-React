@@ -1,8 +1,15 @@
 @media only screen and (max-width: 600px) {
+    h2{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
     .main-content{
         display: block;
     }
     .main{
         margin-bottom: 4rem;
+    }
+    .main-right{
+        padding: 0 1rem;
     }
 }

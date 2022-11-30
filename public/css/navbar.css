@@ -47,3 +47,6 @@ a{
 .nav-navigate button i {
     font-size: 1.3rem;
 }
+.nav-navigate button p{
+    margin: 0;
+}
