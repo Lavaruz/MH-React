@@ -19,6 +19,8 @@ return(
         </div>
 
         <div className="about-mhw">
+            <h2>Monster Hunter: World</h2>
+            <hr />
             <p>Welcome to a new world! Take on the role of a hunter and slay ferocious monsters in a living, breat<br />hing
                 ecosystem where you can use the landscape and its diverse inhabitants to get the upper hand. Hunt alone
                 or in co-op with up to three other players, and use materials collected from fallen foes to craft new
