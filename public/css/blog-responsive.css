@@ -1,8 +1,10 @@
 @media only screen and (max-width: 600px) {
+    .blog-header p{
+        padding: 0;
+    }
     .blog-main{
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        margin-top: 1rem;
     }
 }

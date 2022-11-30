@@ -1,3 +1,11 @@
+.blog-header{
+    text-align: center;
+    margin: 5rem 0;
+}
+.blog-header p{
+    padding: 0 15%;
+}
+
 .blog-main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

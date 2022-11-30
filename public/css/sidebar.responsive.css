@@ -1,40 +1,33 @@
 @media only screen and (max-width: 600px) {
     .sidebar{
-        display: none;
+        background-color: #1c1d21;
+        transition: .5s;
+    }
+    .sidebar-toggle{
+        display: block;
         position: fixed;
+        right: 0;
+        left: 0;
         bottom: 0;
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        background-color: #1c1d21;
+        z-index: 999;
+    }
+    .hide{ 
+        position: fixed;
+        /* top: 35%; */
+        top: 100%;
         left: 0;
         right: 0;
-        background-color: white;
-        padding: .3rem;
-        border: 1px solid lightgray;
-        border-width: 1px 0 0 0;
     }
-    .sidebar-stick{
-        display: flex;
-        flex-direction: row;
-        height: max-content;
-        position: relative;
-        min-height: max-content;
-        justify-content: space-around;
-        border: none;
-    }
-    .sidebar-stick h3{
-        display: none;
-    }
-    .sidebar-1{
-        padding: .3rem;
-    }
-    .sidebar-1 a{
-        display: flex;
-        gap: 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .sidebar-1 a p{
-        margin: .2rem 0;
-        font-size: .8rem;
+    .show{
+        position: fixed;
+        top: 30%;
+        /* top: 100%; */
+        left: 0;
+        right: 0;
     }
 }

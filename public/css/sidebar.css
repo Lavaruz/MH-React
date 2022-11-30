@@ -5,6 +5,9 @@
     position: sticky;
     top: 18%;
 }
+.sidebar-toggle{
+    display: none;
+}
 .sidebar h3{
     margin: .5rem 0;
 }

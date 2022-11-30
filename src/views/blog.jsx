@@ -13,6 +13,10 @@ export default function Blog(){
             <div className="vline"></div>
 
             <div className="main-right">
+                <div className="blog-header">
+                    <h1>Lavaruz Blog - Monster Hunter: World</h1>
+                    <p>The Lavaruz Blog is your best source of information about Counter Side, Artery Gear, Limbus Company and Monster Hunter: World! We're always up to the date with any changes or new additions to those games.</p>
+                </div>
                 <div className="blog-main">
                     <div className="blog-card" onClick={()=> navigate('/blog/1')}>
                         <img src="/img/wallpaper.jpg" alt="" />
