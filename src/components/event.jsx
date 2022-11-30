@@ -1,7 +1,6 @@
 import React from "react"
 
 const Quest = React.forwardRef((props, ref)=>{
-    // let star = <i class="fa-solid fa-star"></i>
     return(
         <a href="/#">
             <div className="event-each" ref={ref}>

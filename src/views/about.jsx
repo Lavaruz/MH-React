@@ -91,20 +91,20 @@ return(
             <hr />
             <div className="about-social-link">
                 <div className="about-social-link-item">
-                    <p><i class="uil uil-window"></i>Website</p>
-                    <a href="http://www.monsterhunterworld.com/us/"><i class="uil uil-link-h"></i>Open in new window</a>
+                    <p><i className="uil uil-window"></i>Website</p>
+                    <a href="http://www.monsterhunterworld.com/us/"><i className="uil uil-link-h"></i>Open in new window</a>
                 </div>
                 <div className="about-social-link-item">
-                    <p><i class="uil uil-facebook"></i>Facebook</p>
-                    <a href="https://www.facebook.com/MonsterHunterWorldGame/"><i class="uil uil-link-h"></i>Open in new window</a>
+                    <p><i className="uil uil-facebook"></i>Facebook</p>
+                    <a href="https://www.facebook.com/MonsterHunterWorldGame/"><i className="uil uil-link-h"></i>Open in new window</a>
                 </div>
                 <div className="about-social-link-item">
-                    <p><i class="uil uil-twitter"></i>Twitter</p>
-                    <a href="https://twitter.com/monsterhunter"><i class="uil uil-link-h"></i>Open in new window</a>
+                    <p><i className="uil uil-twitter"></i>Twitter</p>
+                    <a href="https://twitter.com/monsterhunter"><i className="uil uil-link-h"></i>Open in new window</a>
                 </div>
                 <div className="about-social-link-item">
-                    <p><i class="uil uil-instagram-alt"></i>Instagram</p>
-                    <a href="https://www.instagram.com/monsterhunterworld/"><i class="uil uil-link-h"></i>Open in new window</a>
+                    <p><i className="uil uil-instagram-alt"></i>Instagram</p>
+                    <a href="https://www.instagram.com/monsterhunterworld/"><i className="uil uil-link-h"></i>Open in new window</a>
                 </div>
             </div>
         </div>

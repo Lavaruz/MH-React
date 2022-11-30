@@ -48,8 +48,8 @@ function ArmorDetail(){
         <div className='main-content'>
             <Sidebar/>
             <div className="vline"></div>
-            <div className="detail-right">{content}</div>
-            <Footer />
+            <div className="detail-right">{content}
+            <Footer /></div>
         </div>
         </>
     )

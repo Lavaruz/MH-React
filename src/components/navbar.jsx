@@ -10,7 +10,7 @@ function Navbar(){
                     </a>
                 </div>
                 <div className="nav-navigate">
-                    <button><i class="uil uil-github"></i><p>Follow me on Github</p></button>
+                    <button><i className="uil uil-github"></i><p>Follow me on Github</p></button>
                 </div>
             </div>
         </div>

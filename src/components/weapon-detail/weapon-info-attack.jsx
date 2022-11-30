@@ -1,5 +1,4 @@
 function WeaponAttack(props){
-    console.log(props);
     return(
         <div className="armor-detail-stat">
         <h3>Attack Stats</h3>
