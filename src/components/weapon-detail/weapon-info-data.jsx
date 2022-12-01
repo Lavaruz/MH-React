@@ -16,7 +16,7 @@ function WeaponData(props){
                         <div className="weapon-detail-type-rank">
                             <div className="weapon-detail-rank">
                                 <h3>{props.damageType} </h3>
-                                <p>damage type</p>
+                                <p>damage</p>
                             </div>
                             <hr/>
                             <div className="weapon-detail-type">

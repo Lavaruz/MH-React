@@ -8,12 +8,9 @@
     .weapon-detail-type-rank{
         align-items: center;
     }
-    .wepaon-detail-info-sword img{
-        width: 40px;
-        height: 40px;
-    }
     .weapon-detail-core{
         display: block;
+        padding: 1rem;
     }
     .weapon-sets{
         padding: 1rem;
@@ -35,5 +32,7 @@
     }
     .weapon-durability-table{
         overflow: scroll;
+        width: 100%;
+        /* padding: 0 0 0 4rem; */
     }
 }

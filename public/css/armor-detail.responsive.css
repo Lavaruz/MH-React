@@ -36,4 +36,8 @@
     .resistances-element{
         gap: 1rem;
     }
+    .detail-right{
+        padding: 0 1rem;
+        background-color: #23242a;
+    }
 }

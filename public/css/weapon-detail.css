@@ -60,6 +60,10 @@
     color: rgb(145, 145, 145);
 }
 
+.weapon-detail-type img{
+    display: none;
+}
+
 .weapon-detail-stat{
     background-color: #1c1d21;
     border-radius: 5px;
