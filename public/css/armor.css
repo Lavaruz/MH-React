@@ -48,6 +48,11 @@
     padding: .7rem 1rem;
     width: 100%;
 }
+.search-event{
+    margin-bottom: 2rem;
+    padding: .7rem 1rem;
+    /* width: 100%; */
+}
 .main-search{
     display: flex;
     gap: 1rem;

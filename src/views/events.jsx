@@ -80,8 +80,8 @@ export default function Events(){
             <div className="vline"></div>
             
             <div className="main-right">
-                <h1>Event</h1>
-                <input type="text" className='search-item' placeholder='Search event' onChange={(e)=> {
+                <h1>Monster Hunter: World - Events</h1>
+                <input type="text" className='search-event' placeholder='Search event' onChange={(e)=> {
                     setQuery(e.target.value)
                 }}/>
                 <div className="main-event">
