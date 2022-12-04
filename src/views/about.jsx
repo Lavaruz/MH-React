@@ -84,6 +84,7 @@ return(
                 The hunter's Palico joins the Fifth Fleet with pride, as much a bona fide member of the Commission as
                 any other hunter.</p>
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/582010/extras/MHW_otomo.jpg?t=1661838392" alt="" />
+
         </div>
 
         <div className="about-social">

@@ -42,8 +42,8 @@ function Sidebar(){
                         <div className="sidebar-data-item" onClick={()=> navigate('/armors')}>
                             <p><img src="/img/armor.webp" alt="" /> Armors</p>
                         </div>
-                        <div className="sidebar-data-item" onClick={()=> navigate('/events')}>
-                            <p><img src="/img/ticket.webp" alt="" /> Events</p>
+                        <div className="sidebar-data-item" onClick={()=> navigate('/databases')}>
+                            <p><img src="/img/ticket.webp" alt="" /> Databases</p>
                         </div>
                     </div>
                     <hr />

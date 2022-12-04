@@ -51,6 +51,9 @@ export default function Blog2(){
                         </ul>
                         This also means that shields are working as they should, so Centi users should be happy.
                     </p>
+                    <div className="about-youtube">
+                        <iframe src="https://www.youtube.com/embed/6AC6XoDK6eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
                 </div>
             <Footer />

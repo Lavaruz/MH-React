@@ -1,0 +1,10 @@
+.database-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.database-main-item{
+    padding: 1rem;
+    border: 1px solid #33343a;
+    cursor: pointer;
+}
