@@ -18,22 +18,22 @@ export default function Databases(){
                 <h2>Database</h2>
                 <hr />
                 <div className="database-main">
-                    <div className="database-main-item">
+                    <div className="database-main-item" onClick={()=> navigate('/database/monsters')}>
                         <h1>Monsters</h1>
                     </div>
-                    <div className="database-main-item">
+                    <div className="database-main-item" onClick={()=> navigate('/database/events')}>
                         <h1>Events</h1>
                     </div>
-                    <div className="database-main-item">
+                    <div className="database-main-item" onClick={()=> navigate()}>
                         <h1>Charms</h1>
                     </div>
-                    <div className="database-main-item">
+                    <div className="database-main-item" onClick={()=> navigate()}>
                         <h1>Decorations</h1>
                     </div>
-                    <div className="database-main-item">
+                    <div className="database-main-item" onClick={()=> navigate()}>
                         <h1>Items</h1>
                     </div>
-                    <div className="database-main-item">
+                    <div className="database-main-item" onClick={()=> navigate()}>
                         <h1>Locations</h1>
                     </div>
                 </div>
