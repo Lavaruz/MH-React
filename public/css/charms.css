@@ -1,0 +1,29 @@
+.charms-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.charm-main-item{
+    padding: 1rem;
+    border: 1px solid #33343a;
+    cursor: pointer;
+}
+.charm-main-item h2{
+    margin: 0;
+    color: white;
+}
+.charm-ranks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.charm-level p, .charm-craft p{
+    font-size: .8rem;
+    margin: 0;
+}
+.charm-level-item{
+    margin: .8rem 0;
+}
+.charm-craft{
+    margin: .8rem 0;
+}

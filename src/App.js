@@ -15,6 +15,7 @@ import Blog1 from './views/blog/blog1';
 import Blog2 from './views/blog/blog2';
 import Databases from './views/databases';
 import Monsters from './views/databases/monsters';
+import Charms from './views/databases/charms';
 // import TipsDetail from './views/tips-detail';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -48,6 +49,7 @@ function App() {
             <Route index element={<Databases/>}/>
             <Route path='monsters' element={<Monsters/>}/>
             <Route path='events' element={<Events/>}/>
+            <Route path='charms' element={<Charms/>}/>
             {/* <Route path=':id' element={<WeaponDetail/>}/> */}
           </Route>
 
