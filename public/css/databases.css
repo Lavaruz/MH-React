@@ -4,6 +4,9 @@
     gap: 1rem;
 }
 .database-main-item{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
     padding: 2rem 1rem;
     border: 1px solid #33343a;
     cursor: pointer;

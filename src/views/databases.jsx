@@ -19,12 +19,15 @@ export default function Databases(){
                 <hr />
                 <div className="database-main">
                     <div className="database-main-item" onClick={()=> navigate('/database/monsters')}>
+                        <img src="/img/monster.webp" alt="" />
                         <h1>Monsters</h1>
                     </div>
                     <div className="database-main-item" onClick={()=> navigate('/database/events')}>
+                        <img src="/img/event.webp" alt="" />
                         <h1>Events</h1>
                     </div>
                     <div className="database-main-item" onClick={()=> navigate('/database/charms')}>
+                        <img src="/img/charm.webp" alt="" />
                         <h1>Charms</h1>
                     </div>
                 </div>
