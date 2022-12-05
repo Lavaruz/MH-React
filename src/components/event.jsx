@@ -4,9 +4,15 @@ const Quest = React.forwardRef((props, ref)=>{
     return(
         <a href="/#">
             <div className="event-each" ref={ref}>
-                <p>{props.event.id}.</p>
-                <p><b>{props.event.name}</b></p>
-                <p title="dificult level">{'*'.repeat(props.event.questRank)}</p>
+                <div className="event-header">
+                    <p>{props.event.id}.</p>
+                    <p><b>{props.event.name}</b></p>
+                </div>
+                <div className="event-description">
+                    <p>{props.event.description}</p>
+                    <p title="dificult level">Rank: {props.event.questRank}</p>
+                    <p>Platform: {props.event.platform}</p>
+                </div>
             </div>
         </a>
     )
