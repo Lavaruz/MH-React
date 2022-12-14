@@ -14,7 +14,6 @@ let content = null
 useEffect(()=> {
     axios.get(url)
     .then(res=>{
-        console.log(res.data);
         setMonsters(res.data)
     })
 },[url])
@@ -26,6 +25,7 @@ if (monsters){
             return (
                     <div className="monster-main-item" key={index}>
                         <a href={url_monster} rel="noopener noreferrer" target={"_blank"}>
+                        <img src="/img/jagras.webp" alt="" />
                         <h2>{monster.name}</h2>
                         <p>{monster.description}</p>
                         <div className="monster-main-data">
@@ -39,7 +39,7 @@ if (monsters){
                                     <h4>Weakness: </h4>
                                     {monster.weaknesses.map((weakness, index) => {
                                         return(
-                                            <p key={index}>*{weakness.stars} {weakness.element}</p>
+                                            <p key={index}>{weakness.element} Element</p>
                                         )
                                     })}
                                 </div>

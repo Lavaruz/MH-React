@@ -1,24 +1,26 @@
-.main-event{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+.main-event {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
-.main-right h1{
-    margin: 0;
+.main-right h1 {
+  margin: 0;
 }
 
-.event-each{
-    border: 1px solid #33343a;
-    padding: 1rem;
-    border-radius: 5px;
+.event-each {
+  border: 1px solid #33343a;
+  padding: 1rem;
+  border-radius: 5px;
 }
-.event-header{
-    display: grid;
-    grid-template-columns: max-content 1fr max-content;
-    gap: 1rem;
-    font-size: 1.2rem;
+.event-header {
+  display: flex;
+  text-transform: capitalize;
+  justify-content: space-between;
 }
-.event-each p{
-    font-size: .8rem;
+.event-title h2 {
+  color: white;
+}
+.event-each p {
+  font-size: 0.8rem;
 }

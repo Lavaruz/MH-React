@@ -1,39 +1,46 @@
-.monster-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+.monster-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
-.monster-main-item{
-    padding: 1rem;
-    border: 1px solid #33343a;
-    cursor: pointer;
+.monster-main-item {
+  padding: 1rem;
+  border: 1px solid #33343a;
+  cursor: pointer;
 }
-.monster-main-item p{
-    font-size: .8rem;
+.monster-main-item p {
+  font-size: 0.8rem;
 }
-.monster-main-item h2{
-    color: white;
-    margin-top: 0;
+.monster-main-item h2 {
+  color: white;
+  margin-top: 0;
 }
-.monster-main-info p{
-    font-size: .8rem;
-    margin: 0;
-    margin-top: .4rem;
+.monster-main-item img{
+    width: 100%;
+}
+.monster-main-info p {
+  font-size: 0.8rem;
+  margin: 0;
+  margin-top: 0.4rem;
 }
 
-.monster-main-more{
-    margin: 1rem 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+.monster-main-more {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
-.monster-main-more h4{
-    color: white;
-    font-size: .8rem;
-    margin-top: 0;
-    margin-bottom: .5rem;
+.monster-main-more h4 {
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
-.monster-main-more p{
-    font-size: .8rem;
-    margin: 0;
+.monster-main-more p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.monster-weakness p {
+  text-transform: capitalize;
 }
